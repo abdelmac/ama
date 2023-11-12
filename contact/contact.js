@@ -1,9 +1,12 @@
 // Initialisez la carte centrée sur l'Europe
 const map = L.map('map').setView([51.505, 10], 5);
 
+
+
+
 // Ajoutez une couche de tuiles OpenStreetMap
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: 'while tiles '
+L.tileLayer('http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'While Tiles '
 }).addTo(map);
 
 // Coordonnées des villes
