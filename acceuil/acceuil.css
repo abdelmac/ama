@@ -10,8 +10,15 @@ body {
 
 .logobar {
   display:flex;
-
+  position: relative;
+  transition: top 0.3s;
   height: 3%;
+}
+
+.logobar.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 
