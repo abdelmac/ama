@@ -7,7 +7,7 @@
 
     <link
     rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    href="leaflet\leaflet.css"/>
 
 
     <link
@@ -67,48 +67,8 @@
           next: '.glide__arrow--right',
         },
       }).mount();
-    </script>
-
-    <!-- Conteneur de la carte -->
-    <div id="map"></div>
-
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
-    <script>
-      var map = L.map("map").setView([50, 10], 4); // Centrer la carte sur l'Europe
-
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      }).addTo(map);
-
-      // Chargement des données GeoJSON des capitales européennes
-      var capitalsGeoJSON = {
-        type: "FeatureCollection",
-        features: [
-          {
-            type: "Feature",
-            properties: { name: "Paris" },
-            geometry: {
-              type: "Point",
-              coordinates: [2.3522, 48.8566],
-            },
-          },
-          // Ajoutez les autres capitales ici
-        ],
-      };
-
-      L.geoJSON(capitalsGeoJSON, {
-        pointToLayer: function (feature, latlng) {
-          return L.circleMarker(latlng, {
-            radius: 8,
-            fillColor: "blue",
-            color: "blue",
-            weight: 1,
-            opacity: 1,
-            fillOpacity: 0.8,
-          }).bindPopup(feature.properties.name);
-        },
-      }).addTo(map);
-    </script>
+      <div id="map" ></div>
+      <script src="leaflet\leaflet.js"></script>
+      <script src="contact.js"></script>
   </body>
 </html>
