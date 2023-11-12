@@ -31,7 +31,7 @@ body {
 .logo {
   width: 10%;
   padding: 0px 0px;
-  margin-top: 3%;
+  margin-top: 4%;   /** remet a 3% **/
   margin-left: 3%;
   justify-content: left;
   align-items: center;
@@ -51,7 +51,7 @@ body {
 }
 
 .nav-item {
-  display: flex;  
+  display: flex;
   padding: 2%;
   width: 80%;
 
@@ -421,4 +421,3 @@ footer {
   height: 600px;
   background-color: #05063e;
 }
-
