@@ -3,7 +3,7 @@ const map = L.map('map').setView([51.505, 10], 5);
 
 // Ajoutez une couche de tuiles OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    attribution: 'while tiles '
 }).addTo(map);
 
 // Coordonnées des villes

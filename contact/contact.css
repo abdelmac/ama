@@ -408,10 +408,12 @@ body {
 }
 
 
+/* Styles personnalisés pour la carte */
 #map {
-  height: 600px;
-  width: 800px;
-  margin: 0 auto;
+    background-color: white; /* Couleur de fond blanche */
+    height: 600px;
+    width: 800px;
+    margin: 0 auto;
 }
 
 
