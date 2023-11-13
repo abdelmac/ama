@@ -24,7 +24,7 @@ window.addEventListener('scroll', updateNavbar);
 
 
 // Initialisez la carte centrée sur l'Europe
-const map = L.map('map').setView([49.07081058368201, 6.689774695035996], 5 );
+const map = L.map('map').setView([49.07081058368201, 6.689774695035996], 6 );
 
 
 
@@ -32,21 +32,26 @@ const map = L.map('map').setView([49.07081058368201, 6.689774695035996], 5 );
 // Ajoutez une couche de tuiles ArcGIS
 L.tileLayer('http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
     attribution: '© ArcGIS',
-    minZoom: 4,  // Niveau de zoom maximum des tuiles (peut être différent
+    minZoom: 5,  // Niveau de zoom maximum des tuiles (peut être différent
 }).addTo(map);
 
 
 // Coordonnées des villes
 const cities = [
-    { name: 'Folschviller 4 Rue du Stade, 57730', coordinates: [49.07081058368201, 6.689774695035996] },
-    { name: 'Bordeaux', coordinates: [44.8378, -0.5792] },
+    { name: 'Folschviller', address: '4 Rue du Stade, 57730', coordinates: [49.07081058368201, 6.689774695035996] },
     { name: 'Sarrebruck', coordinates: [49.2383, 6.9813] },
     { name: 'Strasbourg', coordinates: [48.5734, 7.7521] },
     { name: 'Liège', coordinates: [50.8503, 5.6897] },
     { name: 'Namur', coordinates: [50.4632, 4.8633] },
     { name: 'Aachen', coordinates: [50.7753, 6.0839] },
     { name: 'Anvers', coordinates: [51.2194, 4.4025] },
-    { name: 'Amsterdam', coordinates: [52.3792, 4.8994] }
+    { name: 'Amsterdam', coordinates: [52.3792, 4.8994] },
+    { name: 'Stuttgart', coordinates: [48.7758, 9.1829] },
+    { name: 'Francfort', coordinates: [50.1109, 8.6821] },
+    { name: 'Suisse', coordinates: [46.8182, 8.2275] }, // Coordonnées approximatives de la Suisse
+    { name: 'Paris', coordinates: [48.8566, 2.3522] },
+    { name: 'Lille', coordinates: [50.6292, 3.0573] },
+    { name: 'Metz', coordinates: [49.1193, 6.1757] }
 ];
 
 // Créez une couche de marqueurs pour les villes
