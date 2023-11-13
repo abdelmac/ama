@@ -24,19 +24,20 @@ window.addEventListener('scroll', updateNavbar);
 
 
 // Initialisez la carte centrée sur l'Europe
-const map = L.map('map').setView([51.505, 10], 5);
+const map = L.map('map').setView([49.07081058368201, 6.689774695035996], 5.5);
 
 
 
 
-// Ajoutez une couche de tuiles OpenStreetMap
-L.tileLayer('http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x} ', {
-    attribution: 'While Tiles '
+// Ajoutez une couche de tuiles ArcGIS
+L.tileLayer('http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    attribution: '© ArcGIS',
 }).addTo(map);
+
 
 // Coordonnées des villes
 const cities = [
-    { name: 'Folschviller', coordinates: [49.07081058368201, 6.689774695035996] },
+    { name: 'Folschviller 4 Rue du Stade, 57730', coordinates: [49.07081058368201, 6.689774695035996] },
     { name: 'Bordeaux', coordinates: [44.8378, -0.5792] },
     { name: 'Sarrebruck', coordinates: [49.2383, 6.9813] },
     { name: 'Strasbourg', coordinates: [48.5734, 7.7521] },
@@ -47,20 +48,39 @@ const cities = [
     { name: 'Amsterdam', coordinates: [52.3792, 4.8994] }
 ];
 
+// Créez une couche de marqueurs pour les villes
+const cityMarkers = L.layerGroup(cities.map(city => {
+    const marker = L.marker(city.coordinates);
+    marker.bindPopup(city.name); // Associez un popup au marqueur avec le nom de la ville
+    return marker;
+}));
+
+// Ajoutez la couche de marqueurs à la carte
+cityMarkers.addTo(map);
 // Ajoutez un marqueur rouge pour Folschviller
 L.marker(cities[0].coordinates, { icon: L.divIcon({ className: 'red-marker' }) })
     .addTo(map)
     .bindPopup(cities[0].name);
 
-// Ajoutez des marqueurs pour les autres villes
-for (let i = 1; i < cities.length; i++) {
-    L.marker(cities[i].coordinates)
-        .addTo(map)
-        .bindPopup(cities[i].name);
-}
 
 // Créez des polylignes reliant Folschviller aux autres villes
 for (let i = 1; i < cities.length; i++) {
     const polylineCoords = [cities[0].coordinates, cities[i].coordinates];
     L.polyline(polylineCoords, { color: '#05063e' }).addTo(map);
 }
+
+// Créez une couche de contrôle pour activer/désactiver les noms des villes
+const baseLayers = {
+    'ArcGIS': arcGISLayer, // Utilisez la couche ArcGIS comme fond de carte
+    'Villes': cityMarkers
+};
+
+L.control.layers(baseLayers).addTo(map);
+
+
+// Définissez un niveau de zoom maximum et minimum très proches l'un de l'autre
+map.options.maxZoom = 6; // Par exemple, 6 comme niveau maximum
+map.options.minZoom = 5; // Par exemple, 5 comme niveau minimum
+
+// Désactivez la fonction de zoom avec la molette de la souris
+map.scrollWheelZoom.disable(); // Désactivez le zoom avec la molette
