@@ -435,6 +435,17 @@ body {
   margin: 0 auto;
 }
 
+/* Style pour le marqueur rouge */
+.red-marker {
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
 
 
 

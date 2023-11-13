@@ -36,18 +36,31 @@ L.tileLayer('http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_
 
 // Coordonnées des villes
 const cities = [
-    { name: 'Paris', coordinates: [48.8566, 2.3522] },
-    { name: 'Londres', coordinates: [51.5074, -0.1278] },
-    { name: 'Bordeaux', coordinates: [44.8378, -0.5792] }
+    { name: 'Folschviller', coordinates: [49.07081058368201, 6.689774695035996] },
+    { name: 'Bordeaux', coordinates: [44.8378, -0.5792] },
+    { name: 'Sarrebruck', coordinates: [49.2383, 6.9813] },
+    { name: 'Strasbourg', coordinates: [48.5734, 7.7521] },
+    { name: 'Liège', coordinates: [50.8503, 5.6897] },
+    { name: 'Namur', coordinates: [50.4632, 4.8633] },
+    { name: 'Aachen', coordinates: [50.7753, 6.0839] },
+    { name: 'Anvers', coordinates: [51.2194, 4.4025] },
+    { name: 'Amsterdam', coordinates: [52.3792, 4.8994] }
 ];
 
-// Ajoutez des marqueurs pour les villes
-cities.forEach(city => {
-    L.marker(city.coordinates)
-        .addTo(map)
-        .bindPopup(city.name);
-});
+// Ajoutez un marqueur rouge pour Folschviller
+L.marker(cities[0].coordinates, { icon: L.divIcon({ className: 'red-marker' }) })
+    .addTo(map)
+    .bindPopup(cities[0].name);
 
-// Créez une polyligne reliant les villes
-const polylineCoords = cities.map(city => city.coordinates);
-L.polyline(polylineCoords, { color: 'red' }).addTo(map);
+// Ajoutez des marqueurs pour les autres villes
+for (let i = 1; i < cities.length; i++) {
+    L.marker(cities[i].coordinates)
+        .addTo(map)
+        .bindPopup(cities[i].name);
+}
+
+// Créez des polylignes reliant Folschviller aux autres villes
+for (let i = 1; i < cities.length; i++) {
+    const polylineCoords = [cities[0].coordinates, cities[i].coordinates];
+    L.polyline(polylineCoords, { color: '#05063e' }).addTo(map);
+}
