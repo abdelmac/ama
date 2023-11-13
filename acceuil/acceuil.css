@@ -46,7 +46,7 @@ body {
 }
 
 .logo {
-  width: 10%;
+  width: 15%;
   padding: 0px 0px;
   margin-top: 4%;   /** remet a 3% **/
   margin-left: 3%;
@@ -161,7 +161,7 @@ body {
     justify-content: center;
 }
 #home .right img {
-    width: 100%;
+    width: 60%;
 }
 
 
