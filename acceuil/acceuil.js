@@ -24,7 +24,7 @@ window.addEventListener('scroll', updateNavbar);
 
 
 // Initialisez la carte centrée sur l'Europe
-const map = L.map('map').setView([49.07081058368201, 6.689774695035996], 5.5);
+const map = L.map('map').setView([49.07081058368201, 6.689774695035996], 5 );
 
 
 
@@ -32,6 +32,7 @@ const map = L.map('map').setView([49.07081058368201, 6.689774695035996], 5.5);
 // Ajoutez une couche de tuiles ArcGIS
 L.tileLayer('http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
     attribution: '© ArcGIS',
+    minZoom: 4,  // Niveau de zoom maximum des tuiles (peut être différent
 }).addTo(map);
 
 
@@ -76,11 +77,3 @@ const baseLayers = {
 };
 
 L.control.layers(baseLayers).addTo(map);
-
-
-// Définissez un niveau de zoom maximum et minimum très proches l'un de l'autre
-map.options.maxZoom = 6; // Par exemple, 6 comme niveau maximum
-map.options.minZoom = 5; // Par exemple, 5 comme niveau minimum
-
-// Désactivez la fonction de zoom avec la molette de la souris
-map.scrollWheelZoom.disable(); // Désactivez le zoom avec la molette
