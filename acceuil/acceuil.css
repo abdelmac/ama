@@ -14,9 +14,8 @@ body {
     display: flex;
     background-color: #f1f1f1;
     color: #fff;
-    padding: 10px;
     position: relative;
-    transition: top 0.3s;
+    transition: top 10s;
     height: 10%;
     z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
 }
@@ -178,6 +177,10 @@ body {
 .glide__arrow:hover {
   background-color: #fff;
   color: #000;
+}
+
+.slider-container {
+  margin-top: 100px;
 }
 
 /*  */
