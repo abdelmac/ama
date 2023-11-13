@@ -8,18 +8,29 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.logobar {
-  display:flex;
-  position: relative;
-  transition: top 0.3s;
-  height: 3%;
+
+/* Style initial de la barre de navigation */
+#navbar {
+    display: flex;
+    background-color: #f1f1f1;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    transition: top 0.3s;
+    height: 10%;
+    z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
 }
 
-.logobar.fixed {
-  position: fixed;
-  top: 0;
-  width: 100%;
+/* Style lorsque la barre de navigation est fixée en haut de la page */
+#navbar.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
 }
+
+
+
 
 
 .logotitre a {
