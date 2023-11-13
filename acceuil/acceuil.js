@@ -45,7 +45,6 @@ const cities = [
     { name: 'Namur', coordinates: [50.4632, 4.8633] },
     { name: 'Aachen', coordinates: [50.7753, 6.0839] },
     { name: 'Anvers', coordinates: [51.2194, 4.4025] },
-    { name: 'Amsterdam', coordinates: [52.3792, 4.8994] },
     { name: 'Stuttgart', coordinates: [48.7758, 9.1829] },
     { name: 'Francfort', coordinates: [50.1109, 8.6821] },
     { name: 'Suisse', coordinates: [46.8182, 8.2275] }, // Coordonnées approximatives de la Suisse
