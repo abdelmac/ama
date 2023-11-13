@@ -34,7 +34,7 @@ body {
 
 .logotitre a {
   text-decoration: none;
-  color: #05063e;
+  color: #05063e; /** bleu **/
   font-size: 150%; /** 1.2rem  **/
   font-weight: bold;
   justify-content:center ;
@@ -42,7 +42,7 @@ body {
 }
 
 .logotitre a span {
-  color: #787609;
+  color: #787609; /** or **/
 }
 
 .logo {
@@ -140,7 +140,7 @@ body {
     margin-bottom: 10px;
 }
 #home .left h1 span {
-    color: #05063e ;
+    color: #787609 ;
 }
 #home .left p {
     margin-bottom: 30px;
