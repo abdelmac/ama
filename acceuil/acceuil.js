@@ -92,8 +92,8 @@ function ouvrirPage() {
         window.open("../search/painsyro.html");
     }
 
-    if (a === "chien") {
-        window.open("/customizedalert.html");
+    if (a === "viennoiserie", "chocolat", "vienne") {
+        window.open("../search/viennoiserie.html");
     }
 
     if (a === "youtube") {
