@@ -88,8 +88,8 @@ L.control.layers(baseLayers).addTo(map);
 function ouvrirPage() {
     var a = document.getElementById("search").value;
 
-    if (a === "chat") {
-        window.open("/index.html");
+    if (a === "pain syrien" , "pain" , "khobz") {
+        window.open("../search/painsyro.html");
     }
 
     if (a === "chien") {

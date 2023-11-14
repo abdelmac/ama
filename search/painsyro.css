@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f1f1f1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Style initial de la barre de navigation */
+#navbar {
+    display: flex;
+    background-color: #f1f1f1;
+    color: #fff;
+    position: relative;
+    transition: top 10s;
+    height: 8%;
+    z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
+}
+
+/* Style lorsque la barre de navigation est fixée en haut de la page */
+#navbar.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
+}
+
+
+
+
+
+.logotitre a {
+  text-decoration: none;
+  color: #05063e; /** bleu **/
+  font-size: 150%; /** 1.2rem  **/
+  font-weight: bold;
+  justify-content:center ;
+  align-items: column;
+}
+
+.logotitre a span {
+  color: #787609; /** or **/
+}
+
+.logo {
+  width: 15%;
+  padding: 0px 0px;
+  margin-top: 4%;   /** remet a 3% **/
+  margin-left: 3%;
+  justify-content: left;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  width: 400%;
+}
+
+
+/** les differente page du menu **/
+.nav-items {
+  display: flex;
+  width: 65%;
+  padding-right: 10%;
+  margin-top: 5px;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 2%;
+  padding-bottom: 5%;
+  width: 80%;
+
+}
+
+
+
+.nav-item a {
+  text-decoration: none;
+  color: #05063e;
+  font-weight: 600;
+
+  width: 80%;
+}
+
+.nav-search {
+  display: inline;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 3%;
+}
+.nav-search__el {
+  background: #c5c5c5;
+  width: 93%;
+  padding: 5px;
+  margin-top: -20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.searchIput {
+  border: none;
+  background: #c5c5c5;
+  flex-basis: 60%;
+}
+
+.nav-search i {
+  flex-basis: 40%;
+}
+
+.nav-search .searchIput {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+div h1{
+  text-decoration: none;
+  color: #05063e; /** bleu **/
+  font-size: 150%; /** 1.2rem  **/
+  font-weight: bold;
+  justify-content:center ;
+  align-items: center;
+}

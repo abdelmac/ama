@@ -121,7 +121,8 @@ body {
 
 #button {
     background-color: #05063e;
-    border: 0px solid white;
+    color: #c5c5c5;
+    border: 0px solid black;
     height: 20px;
     border-radius: 30px;
     cursor: pointer;
