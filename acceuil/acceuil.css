@@ -119,6 +119,14 @@ body {
   vertical-align: middle;
 }
 
+#button {
+    background-color: #05063e;
+    border: 0px solid white;
+    height: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
 /* phrase d'accroche */
 
 #home {

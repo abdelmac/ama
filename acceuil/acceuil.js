@@ -81,3 +81,24 @@ const baseLayers = {
 };
 
 L.control.layers(baseLayers).addTo(map);
+
+
+
+
+function ouvrirPage() {
+    var a = document.getElementById("search").value;
+
+    if (a === "chat") {
+        window.open("/index.html");
+    }
+
+    if (a === "chien") {
+        window.open("/customizedalert.html");
+    }
+
+    if (a === "youtube") {
+        window.open("https://www.youtube.com/");
+    }
+
+
+}
