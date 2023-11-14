@@ -126,7 +126,7 @@ main {
 }
 
 
-.navbar {
+.nav {
     background-color: #333;
     padding: 10px;
     display: flex;
@@ -139,18 +139,18 @@ main {
     font-size: 1.5em;
 }
 
-.nav-list {
+.nav-items {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.nav-list li {
+.nav-items li {
     margin-right: 20px;
 }
 
-.nav-list a {
+.nav-items a {
     text-decoration: none;
     color: #fff;
 }
@@ -166,7 +166,7 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
-    .nav-list {
+    .nav-items {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -177,11 +177,11 @@ main {
         text-align: center;
     }
 
-    .nav-list.show {
+    .nav-items.show {
         display: flex;
     }
 
-    .nav-list li {
+    .nav-items li {
         margin-right: 0;
         margin-bottom: 10px;
     }

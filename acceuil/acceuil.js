@@ -100,5 +100,8 @@ function ouvrirPage() {
         window.open("https://www.youtube.com/");
     }
 
+    if (a === "brun") {
+        window.open("../search/painsyrobrun.html");
+    }
 
 }
