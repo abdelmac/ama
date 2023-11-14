@@ -88,11 +88,11 @@ L.control.layers(baseLayers).addTo(map);
 function ouvrirPage() {
     var a = document.getElementById("search").value;
 
-    if (a === "pain syrien" , "pain" , "khobz") {
+    if (a === "pain syrien") {
         window.open("../search/painsyro.html");
     }
 
-    if (a === "viennoiserie", "chocolat", "vienne") {
+    if (a === "viennoiserie") {
         window.open("../search/viennoiserie.html");
     }
 
