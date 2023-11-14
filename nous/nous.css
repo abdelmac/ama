@@ -203,67 +203,30 @@ body {
   color: #fff;
 }
 
-
-.pyramid-container {
-    background-image: url('chemin/vers/votre/image.jpg');
-    background-size: cover;
+main {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.level {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+.pyramid {
+    text-align: center;
 }
 
-.employee {
+.level {
+    display: flex;
+    justify-content: center;
+}
+
+.block {
     width: 50px;
     height: 50px;
     background-color: #3498db;
-    color: #fff;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
+    margin: 0 5px;
 }
 
-.level2 .employee {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-}
-
-.level3 .employee {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-}
-
-.connector {
-    width: 0;
-    height: 30px;
-    border: 1px solid #3498db;
-    border-left: none;
-    border-right: none;
-    position: absolute;
-    top: 50px;
-    left: 25px;
-    z-index: 0;
-}
-
-.level2 .connector {
-    height: 20px;
-    top: 40px;
-}
-
-.level3 .connector {
-    height: 10px;
-    top: 30px;
-}
 
 .comments {
   display: flex;
