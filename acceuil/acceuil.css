@@ -508,7 +508,7 @@ body {
 }
 
 .sidebar-social-media__content_icon i:hover {
-  background-color: #f1f1f1;
+  background-color: #afa3ff;
   animation: 3s;
 }
 
@@ -574,7 +574,7 @@ body {
     width: 100%;
     flex-direction: column;
 }
-.list_services {
+.list_service {
     margin: 100px 0;
     display: flex;
     flex-wrap: wrap;
@@ -613,12 +613,17 @@ body {
     font-size: 12px;
 }
 .service a {
+    text-decoration: none;
     margin-top: 10px;
     color: #05063e ;
     padding: 5px 20px;
-    border: 1px solid #05063e ;
     font-size: 12px;
 }
+
+
+
+
+
 #contact {
     height: 100vh;
     display: flex;
@@ -822,20 +827,46 @@ footer h1{
     width: 20%;
     padding-bottom: 5px;
 }
-footer .services{
+footer .servicesi{
     margin-top: -10px;
     display:flex;
     flex-wrap:wrap;
 }
-footer .services .service{
+footer .servicesi .service{
     margin-right: 30px;
 }
-footer .services .service p{
+footer .servicesi .service p{
     max-width: 300px;
 }
 footer #contact{
     color: rgb(181, 181, 181);
 }
+
+.servicei {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicesi .servicei .serv{
+
+  height: 80px;
+  width: 80px;
+}
+
+@media only screen and (max-width: 1000px) {
+  footer .servicesi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+}
+
 
 @media screen and (max-width:680px){
 nav .onglets {
