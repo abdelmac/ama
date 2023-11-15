@@ -373,7 +373,10 @@ body {
 .newletter-action {
   display: flex;
   flex-direction: column;
+  background-image: url("https://lh3.googleusercontent.com/pw/ADCreHffxS8WdD0L5-tI88OGwYS9dc6m99OJGTiwe--FR-QNyPOT1j0sdu0g6WO5MGKCmtq1a73nasuLOEMttSZ72AkRLEHa8JVIRdaTMimsD7EEwperES5TuadMoNRUjBXXQz8jLiMknE68tWytOFr3PNE=w900-h675-s-no?authuser=0");
   width: 60%;
+  height: 200px;
+  background-size: 100%;
   align-items: center;
 }
 
@@ -445,10 +448,8 @@ body {
 }
 
 .recent__items {
-  display: grid;
-  grid-template-columns: repeat(2, 100px);
-  grid-auto-rows: 200px;
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   padding: 0;
 }
@@ -471,8 +472,8 @@ body {
 }
 
 .recent__item img {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   border-radius: 100%;
 }
 
