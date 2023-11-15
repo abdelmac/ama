@@ -82,6 +82,10 @@ body {
     margin-right: 20px;
 }
 
+.nav-item a:hover {
+    color: #787609;
+}
+
 
 .burger-menu {
     display: none;
@@ -123,6 +127,10 @@ body {
 
     .burger-menu.active {
         color: #05063e; /* Couleur du texte au survol */
+    }
+
+    .nav-item a:hover {
+        color: #787609;
     }
 
     #navbar {}
