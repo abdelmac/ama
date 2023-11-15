@@ -103,5 +103,9 @@ function ouvrirPage() {
     if (a === "brun") {
         window.open("../search/painsyrobrun.html");
     }
+    if (a === "shop") {
+        window.open("../search/magasin.html");
+    }
+
 
 }
