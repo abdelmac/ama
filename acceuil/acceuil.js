@@ -92,9 +92,10 @@ L.control.layers(baseLayers).addTo(map);
 function ouvrirPage() {
     var a = document.getElementById("search").value;
 
-    if (a === "pain syrien") {
+    if (a === "pain syrien") or (a === "pain ") {
         window.open("../search/painsyro.html");
     }
+
 
     if (a === "viennoiserie") {
         window.open("../search/viennoiserie.html");
