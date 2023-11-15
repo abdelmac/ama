@@ -354,6 +354,7 @@ body {
   object-fit: cover;
 }
 
+
 .SideBar {
   grid-column-start: 3;
   grid-column-end: 4;
