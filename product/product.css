@@ -136,7 +136,16 @@ body {
 
 }
 
-
+.accroche p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 1.8rem;
+  color: #05063e;
+  font-style: normal;
+}
 
 .cards {
     margin: 0 auto;
