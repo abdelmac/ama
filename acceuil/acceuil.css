@@ -842,6 +842,10 @@ footer #contact{
     color: rgb(181, 181, 181);
 }
 
+footer .sidebar-social-media__content_icon{
+  margin-left: 35px;
+}
+
 .servicei {
   display: flex;
   flex-direction: column;
@@ -854,6 +858,7 @@ footer #contact{
   height: 80px;
   width: 80px;
 }
+
 
 @media only screen and (max-width: 1000px) {
   footer .servicesi {
