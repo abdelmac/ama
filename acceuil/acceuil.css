@@ -810,11 +810,11 @@ header .menu.responsive {
 
 
 footer{
-    margin-top: 40px;
+    margin-top: 5px;
     border-top: 5px solid #6f6f6f;
     background-color: #05063e ;
     color: #fff;
-    padding: 30px 100px;;
+    padding: 30px 10px;
 }
 footer h1{
     font-family: 'Playfair Display', serif;
@@ -854,6 +854,6 @@ nav .onglets {
     display: block;
 }
 footer{
-    padding: 30px;
+    padding: 0px;
 }
 }
