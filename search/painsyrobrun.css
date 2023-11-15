@@ -196,7 +196,7 @@ main:before{
   height: 100%;
   clip-path: circle(55% at right 30%);
   background: #e6e6e6;
-  background-image: linear-gradient( 0deg,  #fd9bb0 10%, #F6416C 100%);
+  background-image: linear-gradient( 0deg,  #05063e 10%, #787609 100%);
 }
 .container{
   display: flex;
@@ -216,7 +216,7 @@ main:before{
   width: 100%;
   border-radius: 12px;
   clip-path: circle(65% at right 35%);
-  background-image: linear-gradient( 135deg,  #fd9bb0 10%, #F6416C 100%);
+  background-image: linear-gradient( 135deg,  #05063e 10%, #787609 100%);
 }
 .container .box.one{
   padding: 35px 5px 0px 35px;
@@ -268,7 +268,7 @@ main:before{
   font-size: 18px;
   font-weight: 500;
   color: #fff;
-  background: #00e6e6;
+  background: #05063e;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -285,6 +285,7 @@ main:before{
 .image img{
   height: 100%;
   width: 100%;
+  border-radius: 7%;
   object-fit: cover;
 }
 .container .box.two .image-box{
