@@ -138,7 +138,10 @@ body {
 }
 
 
-
+.team{
+  display: flex;
+  justify-content: center;
+}
 
 .pyramid {
     text-align: center;
@@ -147,16 +150,36 @@ body {
 .level {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .block {
-    width: 50px;
-    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 130px;
     background-color: #3498db;
-    margin: 0 5px;
+    margin: 0 2%;
 }
 
+.pp{
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+  background-size: 70px;
+  background-repeat: no-repeat;
+}
 
+.block h1{
+  font-size: 1rem;
+}
+
+.block h2{
+  font-size: 0.5rem;
+}
 
 
 
