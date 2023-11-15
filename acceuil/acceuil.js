@@ -1,4 +1,4 @@
-// Récupérez la barre de navigation
+// Récupérez la barre de navigation !
 const navbar = document.getElementById('navbar');
 
 // Récupérez la position initiale de la barre de navigation
@@ -92,7 +92,7 @@ L.control.layers(baseLayers).addTo(map);
 function ouvrirPage() {
     var a = document.getElementById("search").value;
 
-    if (a === "pain syrien") or (a === "pain ") {
+    if (a === "pain syrien") {
         window.open("../search/painsyro.html");
     }
 
