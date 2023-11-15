@@ -82,6 +82,10 @@ body {
     margin-right: 20px;
 }
 
+.nav-item li a:hover {
+    color: #fff;
+}
+
 
 .burger-menu {
     display: none;
