@@ -4,480 +4,440 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
-
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
     <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/pw/ADCreHfJisKPzUgT_u2WIvAJKue_LhhLQc8t9PvuXNPxA-fkEMqthi_U7s4L-CNpoTAZLdsYdlvtcQjnDJji8iGIlwYRu9nPte9rUrTE2K0HYOqrJQZWo5MqqCNUZJB9eyN15YxbDKneEc7xvBv0Sbo4IMM=w873-h879-s-no?authuser=0">
     <link rel="stylesheet" href="acceuil.css" />
     <title>AMAREINE</title>
   </head>
   <body>
-    <header>
-      <nav id="navbar">
-        <div class="logotitre">
-        <img class="logo"
-          src="https://lh3.googleusercontent.com/pw/ADCreHfJisKPzUgT_u2WIvAJKue_LhhLQc8t9PvuXNPxA-fkEMqthi_U7s4L-CNpoTAZLdsYdlvtcQjnDJji8iGIlwYRu9nPte9rUrTE2K0HYOqrJQZWo5MqqCNUZJB9eyN15YxbDKneEc7xvBv0Sbo4IMM=w873-h879-s-no?authuser=0"
-                  alt="slide1"
+        <header>
+          <nav id="navbar">
+            <div class="logotitre">
+              <img class="logo" src="https://lh3.googleusercontent.com/pw/ADCreHfJisKPzUgT_u2WIvAJKue_LhhLQc8t9PvuXNPxA-fkEMqthi_U7s4L-CNpoTAZLdsYdlvtcQjnDJji8iGIlwYRu9nPte9rUrTE2K0HYOqrJQZWo5MqqCNUZJB9eyN15YxbDKneEc7xvBv0Sbo4IMM=w873-h879-s-no?authuser=0" alt="slide1"  />
+              <a href="">AMA<span>REINE</span></a>
+              <div class="nav-search">
+                <div class="nav-search__el">
+                  <i class="las la-search"> </i>
+                  <input type="text" placeholder="Recheche" class="searchIput"  id="search" value="" onchange="ouvrirPage()" />
+                </div>
+              </div>
+            </div>
+            <nav class="nav">
+              <ul class="nav-items">
+                <li class="nav-item"><a href="../acceuil/amareineweb.html">Accueil</a></li>
+                <li class="nav-item"><a href="../nous/nous.html"> produits </a></li>
+                <li class="nav-item"><a href="../service/service.html"> resaux </a></li>
+                <li class="nav-item"><a href="../categorie/categorie.html">notre equipe</a></li>
+              </ul>
+              <div class="burger-menu">&#9776;</div>
+            </nav>
+          </nav>
+          <div>
+            <section id="home">
+              <div class="left">
+                <h1> Envie d'ailleurs ? Le véritable pain <span>Syro-libanais</span> fabriqué en Moselle </h1>
+                <p>Notre souhait : continuer à façonner le pain, tout comme nos grands-pères le façonnaient ; avec le même amour, tout en y apportant une touche d’innovation.</p>
+                <a href="#">Découvrir</a>
+              </div>
+              <div class="right">
+                <img src="https://lh3.googleusercontent.com/pw/ADCreHfJisKPzUgT_u2WIvAJKue_LhhLQc8t9PvuXNPxA-fkEMqthi_U7s4L-CNpoTAZLdsYdlvtcQjnDJji8iGIlwYRu9nPte9rUrTE2K0HYOqrJQZWo5MqqCNUZJB9eyN15YxbDKneEc7xvBv0Sbo4IMM=w873-h879-s-no?authuser=0">
+              </div>
+            </section>
+            <section class="slider-container">
+              <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
+                      <img
+                        src="https://photos.fife.usercontent.google.com/pw/ADCreHch9KfUPdbGcFapzl-bVoNNZZEH20i60o-RfSG7tHDMwMGGl4eh8ik=w1024-h682-s-no-gm?authuser=2"
+                        alt="slide1"
+                      />
+                      <h4> alepin </h4>
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="https://photos.fife.usercontent.google.com/pw/ADCreHdEcn3OZWIIuwlWH5xtJS1ZIxyMMXpnToMqRdJ3WEGZAXLwGEhUklI=w683-h911-s-no-gm?authuser=2"
+                        alt="slide1"
+                      />
+                      <h4> caisse </h4>
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="../img/img9.jpeg"
+                        alt="slide1"
+                      />
+                      <h4>produit alimentaire</h4>
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="../img/img12.jpeg"
+                        alt="slide1"
+                      />
+                      <h4> pain </h4>
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="../img/img15.jpeg"
+                        alt="slide1"
+                      />
+                      <h4>boulangerie</h4>
+                    </li>
+                    <li class="glide__slide">
+                      <img
+                        src="../img/img28.jpeg"
+                        alt="slide1"
+                      />
+                      <h4>boulangerie- patisserie</h4>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                  <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                    <i class="las la-arrow-left"></i>
+                  </button>
+                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                    <i class="las la-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </header>
+
+        <main class="main">
+          <h1 class="main-title"> En vente</h1>
+          <section class="main-section">
+            <div class="article">
+              <div class="article-image">
+                <img
+                  src="../img/img13.jpeg"
+                  alt=""
                 />
-        <a href="">AMA<span>REINE</span></a>
-        </div>
-        <nav class="nav">
-          <ul class="nav-items">
-          <li class="nav-item"><a href="../acceuil/amareineweb.html">Accueil</a></li>
-          <li class="nav-item"><a href="../nous/nous.html">A propos </a></li>
-          <li class="nav-item"><a href="../service/service.html">services</a></li>
-          <li class="nav-item"><a href="../categorie/categorie.html">Categories</a></li>
-          <li class="nav-item"><a href="../contact/contact.html">notre resaux</a></li>
-          <li class="nav-item"><a href="../slide/slide.html">slideplanet</a></li>
+              </div>
+              <div class="article-text">
+                <h2> pain artisanal </h2>
+                <p>
+                  Dans ce cas, l'espace entre l'unité de mesure et l'opérateur "-"
+                  est important pour que la fonction "calc" soit correctement
+                  interprétée par le navigateur web.Dans ce cas, l'espace entre
+                  l'unité de mesure et l'opérateur "-" est important pour que la
+                  fonction "calc" soit correctement interprétée par le navigateur
+                  web.
+                </p>
+                <button class="article-seeMore">voir details</button>
+                <div class="comments">
+                  <div><i class="las la-comments"></i> <span>1</span></div>
+                  <div class="share">
+                    <p>partager</p>
+                    <span> <i class="lab la-facebook-f"></i></span>
+                    <span> <i class="lab la-twitter"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="article">
+              <div class="article-text">
+                <h2> pain qualité superieur</h2>
+                <p>
+                  Dans ce cas, l'espace entre l'unité de mesure et l'opérateur "-"
+                  est important pour que la fonction "calc" soit correctement
+                  interprétée par le navigateur web.Dans ce cas, l'espace entre
+                  l'unité de mesure et l'opérateur "-" est important pour que la
+                  fonction "calc" soit correctement interprétée par le navigateur
+                  web.
+                </p>
+                <button class="article-seeMore">voir details</button>
+                <div class="comments">
+                  <div><i class="las la-comments"></i> <span>1</span></div>
+                  <div class="share">
+                    <p>partager</p>
+                    <span> <i class="lab la-facebook-f"></i></span>
+                    <span> <i class="lab la-twitter"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="article-image">
+                <img
+                  src="../img/img14.jpeg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="article-footer-1">
+              <div class="article-image__footer-1">
+                <img
+                  src="../img/img40.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="article-text__footer-1">
+                <h2>plat </h2>
+                <p>
+                  Dans ce cas, l'espace entre l'unité de mesure et l'opérateur "-"
+                  est important pour que la fonction "calc" soit correctement
+                  interprétée par le navigateur web.Dans ce cas, l'espace entre
+                  l'unité de mesure et l'opérateur "-" est important pour que la
+                  fonction "calc" soit correctement interprétée par le navigateur
+                  web.
+                </p>
+                <button class="article-seeMore">voir details</button>
+                <div class="comments">
+                  <div><i class="las la-comments"></i> <span>1</span></div>
+                  <div class="share">
+                    <p>partager</p>
+                    <span> <i class="lab la-facebook-f"></i></span>
+                    <span> <i class="lab la-twitter"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="article-footer-2">
+              <div class="article-image__footer-2">
+                <img
+                  src="../img/img44.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="article-text__footer-2">
+                <h2> recette</h2>
+                <p>
+                  Dans ce cas, l'espace entre l'unité de mesure et l'opérateur "-"
+                  est important pour que la fonction "calc" soit correctement
+                  interprétée par le navigateur web.Dans ce cas, l'espace entre
+                  l'unité de mesure et l'opérateur "-" est important pour que la
+                  fonction "calc" soit correctement interprétée par le navigateur
+                  web.
+                </p>
+                <button class="article-seeMore">voir details</button>
+                <div class="comments">
+                  <div><i class="las la-comments"></i> <span>1</span></div>
+                  <div class="share">
+                    <p>partager</p>
+                    <span> <i class="lab la-facebook-f"></i></span>
+                    <span> <i class="lab la-twitter"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="SideBar">
+              <div class="SideBar-newletter">
+                <h1>New letter</h1>
+                <div class="newletter-action">
+                  <input
+                    type="text"
+                    placeholder="Entrer votre email"
+                    class="newletter-Input"
+                  />
+                  <button class="new-Btn">S'abonner</button>
+                </div>
+              </div>
+              <div class="recent">
+                <h1>Article récents</h1>
+                <div>
+                  <ul class="recent__items">
+                    <li class="recent__item">
+                      <img
+                        src="../image/painpita1.jpg"
+                        alt="slide1"
+                      />
+                      <h4> pain brun </h4>
+                    </li>
+                    <li class="recent__item">
+                      <img
+                        src="../image/painpita2.jpg"
+                        alt="slide1"
+                      />
+                      <h4> pain blanc</h4>
+                    </li>
+                    <li class="recent__item">
+                      <img
+                        src="../image/painpita3.jpg"
+                        alt="slide1"
+                      />
+                      <h4>patisserie </h4>
+                    </li>
+                    <li class="recent__item">
+                      <img
+                        src="../image/painsachet1200.jpg"
+                        alt="slide1"
+                      />
+                      <h4> alimentaire </h4>
+                    </li>
+                    <li class="recent__item">
+                      <img
+                        src="../image/painlibanais8.jpg"
+                        alt="slide1"
+                      />
+                      <h4> restaurant </h4>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sidebar-social-media">
+                <div class="sidebar-social-media__content">
+                  <h3>Suivez nous</h3>
+                  <div class="sidebar-social-media__content_icon">
+                    <span><i class="lab la-twitter"></i></span>
+                    <span><i class="lab la-instagram"></i></span>
+                    <span><i class="lab la-facebook-f"></i></span>
+                    <span><i class="lab la-linkedin-in"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <script>
+          new Glide('.glide', {
+            type: 'carousel',
+            perView: 5,
+            focusAt: 'center',
+            autoplay: 3000,
+            arrows: {
+              prev: '.glide__arrow--left',
+              next: '.glide__arrow--right',
+            },
+          }).mount();
+        </script>
+        <div id="map" ></div>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="acceuil.js"></script>
 
-          </ul>
-          <div class="nav-search">
-          <div class="nav-search__el">
-            <i class="las la-search"> </i>
-            <input type="text" placeholder="Recheche" class="searchIput"  id="search" value="" onchange="ouvrirPage()" />
-          </div>
-          </div>
-        </nav>
-      </nav>
-      <div>
+        <!-- section choix produit alimentaire -->
 
-
-        <section id="home">
-          <div class="left">
-            <h1> Envie d'ailleurs ? Le véritable pain <span>Syro-libanais</span> fabriqué en Moselle </h1>
-            <p>Notre souhait : continuer à façonner le pain, tout comme nos grands-pères le façonnaient ; avec le même amour, tout en y apportant une touche d’innovation.</p>
-            <a href="#">Découvrir</a>
-          </div>
-          <div class="right">
-            <img src="https://lh3.googleusercontent.com/pw/ADCreHfJisKPzUgT_u2WIvAJKue_LhhLQc8t9PvuXNPxA-fkEMqthi_U7s4L-CNpoTAZLdsYdlvtcQjnDJji8iGIlwYRu9nPte9rUrTE2K0HYOqrJQZWo5MqqCNUZJB9eyN15YxbDKneEc7xvBv0Sbo4IMM=w873-h879-s-no?authuser=0">
+          <section id="cars">
+            <h1 class="section_title"> au choix</h1>
+            <div class="images">
+            <ul>
+                <li class="car">
+                   <div>
+                       <img src="../image/painlibanais3.jpeg" alt="">
+                   </div>
+                   <span>pain libanais </span>
+                   <span class="prix">0.80€</span>
+                   <a href="#">ACHETER MAINTENANT</a>
+                </li>
+                <li class="car">
+                    <div>
+                        <img src="../image/painpita2.jpg" alt="">
+                    </div>
+                    <span>pain asmar</span>
+                    <span class="prix">0.75€</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="../image/painlibanais5.jpg" alt="">
+                    </div>
+                    <span>pain sahbi</span>
+                    <span class="prix">0.75€</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="../image/pain2-1200.jpg" alt="">
+                    </div>
+                    <span> pain pita restaurant</span>
+                    <span class="prix">0.70€</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="../image/painlibanais7.jpg" alt="">
+                    </div>
+                    <span>pain pita </span>
+                    <span class="prix">0.80€</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="../image/painbeau.jpg" alt="">
+                    </div>
+                    <span>lots de 4</span>
+                    <span class="prix"> 3.00€</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                 </li>
+            </ul>
           </div>
         </section>
 
+      <!-- section services -->
 
-      <section class="slider-container">
-          <div class="glide">
-            <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides">
-                <li class="glide__slide">
-                  <img
-                    src="https://photos.fife.usercontent.google.com/pw/ADCreHch9KfUPdbGcFapzl-bVoNNZZEH20i60o-RfSG7tHDMwMGGl4eh8ik=w1024-h682-s-no-gm?authuser=2"
-                    alt="slide1"
-                  />
-                  <h4> alepin </h4>
-                </li>
-                <li class="glide__slide">
-                  <img
-                    src="https://photos.fife.usercontent.google.com/pw/ADCreHdEcn3OZWIIuwlWH5xtJS1ZIxyMMXpnToMqRdJ3WEGZAXLwGEhUklI=w683-h911-s-no-gm?authuser=2"
-                    alt="slide1"
-                  />
-                  <h4> caisse </h4>
-                </li>
-                <li class="glide__slide">
-                  <img
-                    src="../img/img9.jpeg"
-                    alt="slide1"
-                  />
-                  <h4>produit alimentaire</h4>
-                </li>
-                <li class="glide__slide">
-                  <img
-                    src="../img/img12.jpeg"
-                    alt="slide1"
-                  />
-                  <h4> pain </h4>
-                </li>
-                <li class="glide__slide">
-                  <img
-                    src="../img/img15.jpeg"
-                    alt="slide1"
-                  />
-                  <h4>boulangerie</h4>
-                </li>
-                <li class="glide__slide">
-                  <img
-                    src="../img/img28.jpeg"
-                    alt="slide1"
-                  />
-                  <h4>boulangerie- patisserie</h4>
-                </li>
-              </ul>
+        <section id="services">
+          <h1 class="section_title">Nos Services</h1>
+          <div class="list_services">
+              <div class="service">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                  <h3>Dépannage</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis illum natus iste, dicta maiores ipsam.</p>
+                   <a href="#" class="read_more">Lire Plus</a>
+              </div>
+              <div class="service">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                  <h3>Dépannage</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis illum natus iste, dicta maiores ipsam.</p>
+                   <a href="#" class="read_more">Lire Plus</a>
+              </div>
+              <div class="service">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                  <h3>Dépannage</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis illum natus iste, dicta maiores ipsam.</p>
+                   <a href="#" class="read_more">Lire Plus</a>
+              </div>
             </div>
+        </section>
 
-            <div class="glide__arrows" data-glide-el="controls">
-              <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-                <i class="las la-arrow-left"></i>
-              </button>
-              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-                <i class="las la-arrow-right"></i>
-              </button>
-            </div>
+
+      <!-- section contact -->
+
+        <section id="contact">
+          <h1 class="section_title">Nos Services</h1>
+          <div class="localisation_contact_div">
+              <div class="localisation">
+                  <h3>Notre Adresse</h3>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d653.4558627894828!2d6.690079593812693!3d49.07099049369847!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1699447424146!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+
+              <div class="form_contact">
+                  <h3>Envoyer un message</h3>
+                  <form action="#">
+                      <input type="text"placeholder="Nom">
+                      <input type="email"placeholder="Adresse Mail">
+                      <input type="text"placeholder="Objet">
+                      <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                      <input type="submit" value="Envoyer">
+                  </form>
+              </div>
           </div>
         </section>
-    </div>
-    </header>
 
-    <main class="main">
-      <h1 class="main-title"> En vente</h1>
-      <section class="main-section">
-        <div class="article">
-          <div class="article-image">
-            <img
-              src="../img/img13.jpeg"
-              alt=""
-            />
-          </div>
-          <div class="article-text">
-            <h2> pain artisanal </h2>
-            <p>
-              Dans ce cas, l'espace entre l'unité de mesure et l'opérateur "-"
-              est important pour que la fonction "calc" soit correctement
-              interprétée par le navigateur web.Dans ce cas, l'espace entre
-              l'unité de mesure et l'opérateur "-" est important pour que la
-              fonction "calc" soit correctement interprétée par le navigateur
-              web.
-            </p>
-            <button class="article-seeMore">voir details</button>
-            <div class="comments">
-              <div><i class="las la-comments"></i> <span>1</span></div>
-              <div class="share">
-                <p>partager</p>
-                <span> <i class="lab la-facebook-f"></i></span>
-                <span> <i class="lab la-twitter"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="article">
-          <div class="article-text">
-            <h2> pain qualité superieur</h2>
-            <p>
-              Dans ce cas, l'espace entre l'unité de mesure et l'opérateur "-"
-              est important pour que la fonction "calc" soit correctement
-              interprétée par le navigateur web.Dans ce cas, l'espace entre
-              l'unité de mesure et l'opérateur "-" est important pour que la
-              fonction "calc" soit correctement interprétée par le navigateur
-              web.
-            </p>
-            <button class="article-seeMore">voir details</button>
-            <div class="comments">
-              <div><i class="las la-comments"></i> <span>1</span></div>
-              <div class="share">
-                <p>partager</p>
-                <span> <i class="lab la-facebook-f"></i></span>
-                <span> <i class="lab la-twitter"></i></span>
-              </div>
-            </div>
-          </div>
-          <div class="article-image">
-            <img
-              src="../img/img14.jpeg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="article-footer-1">
-          <div class="article-image__footer-1">
-            <img
-              src="../img/img40.jpg"
-              alt=""
-            />
-          </div>
-          <div class="article-text__footer-1">
-            <h2>plat </h2>
-            <p>
-              Dans ce cas, l'espace entre l'unité de mesure et l'opérateur "-"
-              est important pour que la fonction "calc" soit correctement
-              interprétée par le navigateur web.Dans ce cas, l'espace entre
-              l'unité de mesure et l'opérateur "-" est important pour que la
-              fonction "calc" soit correctement interprétée par le navigateur
-              web.
-            </p>
-            <button class="article-seeMore">voir details</button>
-            <div class="comments">
-              <div><i class="las la-comments"></i> <span>1</span></div>
-              <div class="share">
-                <p>partager</p>
-                <span> <i class="lab la-facebook-f"></i></span>
-                <span> <i class="lab la-twitter"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="article-footer-2">
-          <div class="article-image__footer-2">
-            <img
-              src="../img/img44.jpg"
-              alt=""
-            />
-          </div>
-          <div class="article-text__footer-2">
-            <h2> recette</h2>
-            <p>
-              Dans ce cas, l'espace entre l'unité de mesure et l'opérateur "-"
-              est important pour que la fonction "calc" soit correctement
-              interprétée par le navigateur web.Dans ce cas, l'espace entre
-              l'unité de mesure et l'opérateur "-" est important pour que la
-              fonction "calc" soit correctement interprétée par le navigateur
-              web.
-            </p>
-            <button class="article-seeMore">voir details</button>
-            <div class="comments">
-              <div><i class="las la-comments"></i> <span>1</span></div>
-              <div class="share">
-                <p>partager</p>
-                <span> <i class="lab la-facebook-f"></i></span>
-                <span> <i class="lab la-twitter"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="SideBar">
-          <div class="SideBar-newletter">
-            <h1>New letter</h1>
-            <div class="newletter-action">
-              <input
-                type="text"
-                placeholder="Entrer votre email"
-                class="newletter-Input"
-              />
-              <button class="new-Btn">S'abonner</button>
-            </div>
-          </div>
-          <div class="recent">
-            <h1>Article récents</h1>
-            <div>
-              <ul class="recent__items">
-                <li class="recent__item">
-                  <img
-                    src="../image/painpita1.jpg"
-                    alt="slide1"
-                  />
-                  <h4> pain brun </h4>
-                </li>
-                <li class="recent__item">
-                  <img
-                    src="../image/painpita2.jpg"
-                    alt="slide1"
-                  />
-                  <h4> pain blanc</h4>
-                </li>
-                <li class="recent__item">
-                  <img
-                    src="../image/painpita3.jpg"
-                    alt="slide1"
-                  />
-                  <h4>patisserie </h4>
-                </li>
-                <li class="recent__item">
-                  <img
-                    src="../image/painsachet1200.jpg"
-                    alt="slide1"
-                  />
-                  <h4> alimentaire </h4>
-                </li>
-                <li class="recent__item">
-                  <img
-                    src="../image/painlibanais8.jpg"
-                    alt="slide1"
-                  />
-                  <h4> restaurant </h4>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="sidebar-social-media">
-            <div class="sidebar-social-media__content">
-              <h3>Suivez nous</h3>
-              <div class="sidebar-social-media__content_icon">
-                <span><i class="lab la-twitter"></i></span>
-                <span><i class="lab la-instagram"></i></span>
-                <span><i class="lab la-facebook-f"></i></span>
-                <span><i class="lab la-linkedin-in"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <script>
-      new Glide('.glide', {
-        type: 'carousel',
-        perView: 5,
-        focusAt: 'center',
-        autoplay: 3000,
-        arrows: {
-          prev: '.glide__arrow--left',
-          next: '.glide__arrow--right',
-        },
-      }).mount();
-    </script>
-    <div id="map" ></div>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script src="acceuil.js"></script>
+        <footer>
 
-    <!-- section choix produit alimentaire -->
+            <h1>Nos services</h1>
+            <div class="services">
 
-<section id="cars">
-    <h1 class="section_title"> au choix</h1>
-    <div class="images">
-        <ul>
-            <li class="car">
-               <div>
-                   <img src="../image/painlibanais3.jpeg" alt="">
-               </div>
-               <span>pain libanais </span>
-               <span class="prix">0.80€</span>
-               <a href="#">ACHETER MAINTENANT</a>
-            </li>
-            <li class="car">
-                <div>
-                    <img src="../image/painpita2.jpg" alt="">
+                <div class="service">
+                    <h3>Livraison gratuite</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quidem recusandae explicabo veniam voluptatem voluptatum reprehenderit dignissimos ipsum magnam accusantium, dolores odio, dolorem provident sapiente consequuntur harum eaque veritatis? Eveniet.</p>
                 </div>
-                <span>pain asmar</span>
-                <span class="prix">0.75€</span>
-                <a href="#">ACHETER MAINTENANT</a>
-             </li>
-             <li class="car">
-                <div>
-                    <img src="../image/painlibanais5.jpg" alt="">
+
+                <div class="service">
+                    <h3>Paiement en ligne</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quidem recusandae explicabo veniam voluptatem voluptatum reprehenderit dignissimos ipsum magnam accusantium, dolores odio, dolorem provident sapiente consequuntur harum eaque veritatis? Eveniet.</p>
                 </div>
-                <span>pain sahbi</span>
-                <span class="prix">0.75€</span>
-                <a href="#">ACHETER MAINTENANT</a>
-             </li>
-             <li class="car">
-                <div>
-                    <img src="../image/pain2-1200.jpg" alt="">
+
+                <div class="service">
+                    <h3>Aimé ou remboursé</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quidem recusandae explicabo veniam voluptatem voluptatum reprehenderit dignissimos ipsum magnam accusantium, dolores odio, dolorem provident sapiente consequuntur harum eaque veritatis? Eveniet.</p>
                 </div>
-                <span> pain pita restaurant</span>
-                <span class="prix">0.70€</span>
-                <a href="#">ACHETER MAINTENANT</a>
-             </li>
-             <li class="car">
-                <div>
-                    <img src="../image/painlibanais7.jpg" alt="">
-                </div>
-                <span>pain pita </span>
-                <span class="prix">0.80€</span>
-                <a href="#">ACHETER MAINTENANT</a>
-             </li>
-             <li class="car">
-                <div>
-                    <img src="../image/painbeau.jpg" alt="">
-                </div>
-                <span>lots de 4</span>
-                <span class="prix"> 3.00€</span>
-                <a href="#">ACHETER MAINTENANT</a>
-             </li>
-        </ul>
-    </div>
-</section>
 
-  <!-- section services -->
+            </div>
 
-  <section id="services">
-      <h1 class="section_title">Nos Services</h1>
-      <div class="list_services">
-          <div class="service">
-              <i class="fa-solid fa-screwdriver-wrench"></i>
-              <h3>Dépannage</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis illum natus iste, dicta maiores ipsam.</p>
-               <a href="#" class="read_more">Lire Plus</a>
-          </div>
-          <div class="service">
-              <i class="fa-solid fa-screwdriver-wrench"></i>
-              <h3>Dépannage</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis illum natus iste, dicta maiores ipsam.</p>
-               <a href="#" class="read_more">Lire Plus</a>
-          </div>
-          <div class="service">
-              <i class="fa-solid fa-screwdriver-wrench"></i>
-              <h3>Dépannage</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis illum natus iste, dicta maiores ipsam.</p>
-               <a href="#" class="read_more">Lire Plus</a>
-          </div>
-      </div>
-  </section>
-
-
-  <!-- section contact -->
-
-  <section id="contact">
-      <h1 class="section_title">Nos Services</h1>
-      <div class="localisation_contact_div">
-          <div class="localisation">
-              <h3>Notre Adresse</h3>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d653.4558627894828!2d6.690079593812693!3d49.07099049369847!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1699447424146!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
-
-          <div class="form_contact">
-              <h3>Envoyer un message</h3>
-              <form action="#">
-                  <input type="text"placeholder="Nom">
-                  <input type="email"placeholder="Adresse Mail">
-                  <input type="text"placeholder="Objet">
-                  <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                  <input type="submit" value="Envoyer">
-              </form>
-          </div>
-      </div>
-  </section>
-
-
-  <footer>
-      <p>  All rights reserved 2023 . </p>
-  </footer>
-
-  <script>
-      //menu responsive code JS
-
-      var menu_toggle = document.querySelector('.menu_toggle');
-      var menu = document.querySelector('.menu');
-      var menu_toggle_span = document.querySelector('.menu_toggle span');
-
-      menu_toggle.onclick = function(){
-          menu_toggle.classList.toggle('active');
-          menu_toggle_span.classList.toggle('active');
-          menu.classList.toggle('responsive') ;
-      }
-
-  </script>
-
-  <footer>
-
-      <h1>Nos services</h1>
-      <div class="services">
-
-          <div class="service">
-              <h3>Livraison gratuite</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quidem recusandae explicabo veniam voluptatem voluptatum reprehenderit dignissimos ipsum magnam accusantium, dolores odio, dolorem provident sapiente consequuntur harum eaque veritatis? Eveniet.</p>
-          </div>
-
-          <div class="service">
-              <h3>Paiement en ligne</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quidem recusandae explicabo veniam voluptatem voluptatum reprehenderit dignissimos ipsum magnam accusantium, dolores odio, dolorem provident sapiente consequuntur harum eaque veritatis? Eveniet.</p>
-          </div>
-
-          <div class="service">
-              <h3>Aimé ou remboursé</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quidem recusandae explicabo veniam voluptatem voluptatum reprehenderit dignissimos ipsum magnam accusantium, dolores odio, dolorem provident sapiente consequuntur harum eaque veritatis? Eveniet.</p>
-          </div>
-
-      </div>
-
-      <p id="contact">Contact : 08 19 17 278 1 | &copy; 2021, Burgure.</p>
-      <p> copyright </p>
-  </footer>
+            <p id="contact">Contact : 08 19 17 278 1 | &copy; 2021, Burgure.</p>
+            <p> copyright </p>
+        </footer>
   </body>
 </html>

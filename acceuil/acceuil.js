@@ -21,7 +21,11 @@ function updateNavbar() {
 // Écoutez l'événement de défilement de la page
 window.addEventListener('scroll', updateNavbar);
 
+// le menu burger //
 
+document.querySelector('.burger-menu').addEventListener('click', () => {
+    document.querySelector('.nav-items').classList.toggle('show');
+});
 
 // Initialisez la carte centrée sur l'Europe
 const map = L.map('map').setView([49.07081058368201, 6.689774695035996], 6 );
@@ -108,4 +112,14 @@ function ouvrirPage() {
     }
 
 
+}
+
+var menu_toggle = document.querySelector('.menu_toggle');
+var menu = document.querySelector('.menu');
+var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+menu_toggle.onclick = function(){
+    menu_toggle.classList.toggle('active');
+    menu_toggle_span.classList.toggle('active');
+    menu.classList.toggle('responsive') ;
 }
