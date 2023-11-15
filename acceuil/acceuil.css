@@ -118,7 +118,7 @@ body {
     }
 
     .burger-menu {
-        display: block;
+        display: fixed;
         font-size: 1.5em;
         cursor: pointer;
         color: #05063e; /* Ajout de la couleur de texte */
@@ -133,7 +133,6 @@ body {
         color: #787609;
     }
 
-    #navbar {}
 
 }
 
