@@ -859,6 +859,10 @@ footer .sidebar-social-media__content_icon{
   width: 80px;
 }
 
+footer .servicesi {
+    margin-bottom: 10px;
+}
+
 
 @media only screen and (max-width: 1000px) {
   footer .servicesi {
