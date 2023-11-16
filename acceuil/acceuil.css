@@ -113,8 +113,13 @@ body {
         grid-template-columns: auto;
         grid-template-rows: 200px 1fr 200px;
       }
+      .article-text h2 , .article-text__footer-1 h2 , .article-text__footer-2 h2 {
+        font-size: 30px;
+        font-weight: 700;
+        color: #05063e;
+      }
 
-    
+
     .nav-items {
         display: none;
         flex-direction: column;
@@ -627,9 +632,7 @@ body {
   padding-bottom: 30px;
 }
 
-.article-text h2,
-.article-text__footer-1 h2,
-.article-text__footer-2 h2 {
+.article-text h2 , .article-text__footer-1 h2 , .article-text__footer-2 h2 {
   font-size: 30px;
   font-weight: 700;
   color: #05063e;
@@ -1394,6 +1397,11 @@ footer{
     display: flex;
     width: auto;
 
+  }
+  .article-text h2 , .article-text__footer-1 h2 , .article-text__footer-2 h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #05063e;
   }
 
 
