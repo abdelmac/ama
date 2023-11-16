@@ -52,10 +52,17 @@ body {
 
 }
 
+
 .nav {
     display: flex;
     flex-direction: row;
     margin-left: 10px;
+}
+
+.nav-search__el {
+  display: flex;
+  justify-content: center;
+
 }
 
 /** les differentes pages du menu **/
@@ -67,8 +74,6 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 5px;
-    margin-left: auto;
-    right: 300px;
 }
 
 .nav-item {
@@ -1282,35 +1287,23 @@ footer{
       z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
   }
 
-  .logotitre {
 
-  }
 
-  .logotitre a {
-      text-decoration: none;
-      color: #05063e; /** bleu **/
-      font-size: 70%; /** 1.2rem  **/
-      font-weight: bold;
-  }
-
-  .logotitre a span {
-      color: #787609; /** or **/
-  }
-
-  .logo {
-      width: 7%;
-      margin-top: 2%;
-      margin-left: 3%;
-      margin-right: 2%;
-
-  }
 
   .nav {
       display: flex;
+      justify-content: center;
+      left: auto;
       flex-direction: row;
       margin-left: 10px;
   }
-
+  i.las la-search{
+    display: none;
+  }
+  .searchIput{
+    display: flex;
+    width: 120px;
+  }
   /** les differentes pages du menu **/
   .nav-items {
       flex-grow: 1; /* Permet à la barre de navigation de prendre tout l'espace disponible */
@@ -1319,7 +1312,7 @@ footer{
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 5px;
+      margin-top: 50px;
       margin-left: -60%;
   }
 
@@ -1358,11 +1351,11 @@ footer{
   }
 
   .burger-menu {
-      display: block;
+      display: auto;
       font-size: 1.5em;
       cursor: pointer;
       color: #05063e; /* Ajout de la couleur de texte */
-      margin-right: 0px; /* Ajout d'un espacement à droite */
+      margin-right: 20px; /* Ajout d'un espacement à droite */
   }
 
   .burger-menu.active {
