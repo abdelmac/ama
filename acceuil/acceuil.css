@@ -136,12 +136,24 @@ body {
 
 }
 
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 
-
-
-
-
-
+.video-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('chemin_de_votre_video.mp4') center/cover no-repeat; /* Remplacez 'chemin_de_votre_video.mp4' par le chemin de votre vidéo */
+    opacity: 0.5; /* Réglez l'opacité selon vos préférences */
+    z-index: -1;
+}
 
 
 
@@ -150,6 +162,7 @@ body {
 #home {
     margin-top: 50px;
     height: calc(100vh - 50px);
+    background-image: url("https://larkhillsboro.com/wp-content/uploads/2022/11/hero-banner-wave.svg");
     padding: 0 8%;
     display: flex;
     align-items: center;
@@ -200,7 +213,7 @@ body {
 /* slider */
 .slider-container {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../img/img33.jpg');
+    url('');
   height: 400px;
   display: flex;
   align-items: center;
@@ -266,6 +279,11 @@ body {
 }
 
 /*  */
+.main {
+  background-image: url("https://lh3.googleusercontent.com/pw/ADCreHfSyKwR8uvJpexhbivesrwWaTjmmHLpVJ6PUEh6lFBHZbE2FoL7ZP_LOCgHftwy_DhDH7ZpPU16nF__PukOb57YIVXQIUkuu1KFHzG3mj77DBTRis6ENnvC5ghRo4Rum9eXb23uS2OMEgp7JKiUJIU=w1509-h879-s-no?authuser=0");
+  background-repeat: no-repeat;
+}
+
 .main-title {
   padding: 0px 20px;
   color: #05063e;
