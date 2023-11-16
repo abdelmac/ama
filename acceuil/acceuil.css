@@ -55,8 +55,10 @@ body {
 
 .nav {
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    margin-left: 10px;
+    margin-left: auto;
+    right: -10px;
 }
 
 .nav-search__el {
@@ -1273,7 +1275,7 @@ footer{
       display: flex;
       background-color: #fff;
       color: #fff;
-      position: relative;
+      position: top;
       transition: top 10s;
       height: 8%;
       z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
