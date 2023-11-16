@@ -147,6 +147,9 @@ function ouvrirPage() {
     if (a === "croissant") {
       window.location.href="../search/croissant.html";
     }
+    else{
+      window.location.href="../index.html";
+    }
 
 
 }
