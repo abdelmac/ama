@@ -542,17 +542,33 @@ body {
     font-size: 15px;
 }
 
-#services {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex-direction: column;
+.car {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
-.list_service {
+
+.car img{
+  width: 90px;
+  height: ;
+}
+
+.car a{
+  height: 30px;
+  width: 50px;
+}
+
+.images ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.list_services {
     margin: 100px 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;

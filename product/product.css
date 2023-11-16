@@ -624,17 +624,18 @@ body {
     font-size: 15px;
 }
 
+
 #services {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
 }
-.list_service {
+.list_services {
     margin: 100px 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;

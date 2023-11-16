@@ -86,6 +86,7 @@ body {
     color: #787609;
 }
 
+
 .burger-menu {
     display: none;
 }
@@ -132,16 +133,8 @@ body {
         color: #787609;
     }
 
-    #navbar {}
 
 }
-
-
-
-
-
-
-
 
 
 /* phrase d'accroche */
@@ -149,6 +142,7 @@ body {
 #home {
     margin-top: 50px;
     height: calc(100vh - 50px);
+    background-image: url("https://larkhillsboro.com/wp-content/uploads/2022/11/hero-banner-wave.svg");
     padding: 0 8%;
     display: flex;
     align-items: center;
@@ -199,7 +193,7 @@ body {
 /* slider */
 .slider-container {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../img/img33.jpg');
+    url('');
   height: 400px;
   display: flex;
   align-items: center;
@@ -265,6 +259,11 @@ body {
 }
 
 /*  */
+.main {
+  background-image: url("https://lh3.googleusercontent.com/pw/ADCreHfSyKwR8uvJpexhbivesrwWaTjmmHLpVJ6PUEh6lFBHZbE2FoL7ZP_LOCgHftwy_DhDH7ZpPU16nF__PukOb57YIVXQIUkuu1KFHzG3mj77DBTRis6ENnvC5ghRo4Rum9eXb23uS2OMEgp7JKiUJIU=w1509-h879-s-no?authuser=0");
+  background-repeat: no-repeat;
+}
+
 .main-title {
   padding: 0px 20px;
   color: #05063e;
@@ -353,6 +352,7 @@ body {
   object-fit: cover;
 }
 
+
 .SideBar {
   grid-column-start: 3;
   grid-column-end: 4;
@@ -371,7 +371,10 @@ body {
 .newletter-action {
   display: flex;
   flex-direction: column;
+  background-image: url("https://lh3.googleusercontent.com/pw/ADCreHffxS8WdD0L5-tI88OGwYS9dc6m99OJGTiwe--FR-QNyPOT1j0sdu0g6WO5MGKCmtq1a73nasuLOEMttSZ72AkRLEHa8JVIRdaTMimsD7EEwperES5TuadMoNRUjBXXQz8jLiMknE68tWytOFr3PNE=w900-h675-s-no?authuser=0");
   width: 60%;
+  height: 200px;
+  background-size: 100%;
   align-items: center;
 }
 
@@ -443,10 +446,8 @@ body {
 }
 
 .recent__items {
-  display: grid;
-  grid-template-columns: repeat(2, 100px);
-  grid-auto-rows: 200px;
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   padding: 0;
 }
@@ -469,8 +470,8 @@ body {
 }
 
 .recent__item img {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   border-radius: 100%;
 }
 
@@ -541,17 +542,40 @@ body {
     font-size: 15px;
 }
 
+.car {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.car img{
+  width: 90px;
+  height: ;
+}
+
+.car a{
+  height: 30px;
+  width: 50px;
+}
+
+.images ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
 #services {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
 }
-.list_service {
+.list_services {
     margin: 100px 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;

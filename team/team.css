@@ -587,17 +587,40 @@ body {
     font-size: 15px;
 }
 
+.car {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.car img{
+  width: 90px;
+  height: ;
+}
+
+.car a{
+  height: 30px;
+  width: 50px;
+}
+
+.images ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
 #services {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
 }
-.list_service {
+.list_services {
     margin: 100px 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
