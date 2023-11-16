@@ -1280,15 +1280,13 @@ footer{
   }
 
   .logotitre {
-      display: flex;
-      align-items: center;
-      margin-left: 3%;
+
   }
 
   .logotitre a {
       text-decoration: none;
       color: #05063e; /** bleu **/
-      font-size: 150%; /** 1.2rem  **/
+      font-size: 100%; /** 1.2rem  **/
       font-weight: bold;
   }
 
@@ -1297,7 +1295,7 @@ footer{
   }
 
   .logo {
-      width: 7%;
+      width: 10%;
       margin-top: 2%;
       margin-left: 3%;
       margin-right: 2%;
@@ -1379,6 +1377,10 @@ footer{
 
   .nav-item a:hover {
       color: #787609;
+  }
+
+  .nav-search {
+    width: 10%;
   }
 
 
