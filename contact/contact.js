@@ -88,28 +88,64 @@ L.control.layers(baseLayers).addTo(map);
 
 
 
-
 function ouvrirPage() {
     var a = document.getElementById("search").value;
 
-    if (a === "pain syrien") {
-        window.open("../search/painsyro.html");
+    if (a === "pain") {
+        window.open("../search/painalepin.html");
     }
 
-    if (a === "viennoiserie") {
-        window.open("../search/viennoiserie.html");
+    if (a === "alepin") {
+        window.open("../search/painalepin.html");
     }
+
+
+    if (a === "viennoiserie") {
+        window.open("../search/croissant.html");
+    }
+
+    if (a === "mamoul") {
+        window.open("../search/mamoul.html");
+    }
+
+    if (a === "hamburger") {
+        window.open("../search/burger.html");
+    }
+
+    if (a === "burger") {
+        window.open("../search/burger.html");
+    }
+
+
 
     if (a === "youtube") {
         window.open("https://www.youtube.com/");
     }
 
     if (a === "brun") {
-        window.open("../search/painsyrobrun.html");
+        window.open("../search/paindorge.html");
     }
+
+    if (a === "asmar") {
+        window.open("../search/paindorge.html");
+    }
+
     if (a === "shop") {
-        window.open("../search/magasin.html");
+        window.open("../product/product.html");
     }
+
+    if (a === "mamoul") {
+        window.open("../search/mamoul.html");
+    }
+
+    if (a === "kaak") {
+        window.open("../search/kaak.html");
+    }
+
+    if (a === "croissant") {
+      window.open("../search/croissant.html")
+    }
+
 
 
 }

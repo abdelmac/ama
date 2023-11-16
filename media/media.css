@@ -567,6 +567,37 @@ body {
   flex-direction: row;
 }
 
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 0;
+}
+
+.grille {
+    max-width: 1300px;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    /* border: 1px solid #333; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 10px;
+}
+.grid-item {
+    width: 300px;
+    height: 200px;
+    background: #333;
+}
+
+
 #services {
     display: flex;
     align-items: center;
@@ -842,6 +873,10 @@ footer #contact{
     color: rgb(181, 181, 181);
 }
 
+footer .sidebar-social-media__content_icon{
+  margin-left: 35px;
+}
+
 .servicei {
   display: flex;
   flex-direction: column;
@@ -855,6 +890,11 @@ footer #contact{
   width: 80px;
 }
 
+footer .servicesi {
+    margin-bottom: 10px;
+}
+
+
 @media only screen and (max-width: 1000px) {
   footer .servicesi {
     display: flex;
@@ -866,34 +906,7 @@ footer #contact{
 
 
 }
-*, ::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-h1 {
-    text-align: center;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 50px 0;
-}
 
-.grille {
-    max-width: 1300px;
-    width: 80%;
-    height: auto;
-    margin: 30px auto;
-    /* border: 1px solid #333; */
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
-    justify-content: center;
-    grid-gap: 10px;
-}
-.grid-item {
-    width: 300px;
-    height: 200px;
-    background: #333;
-}
 
 @media screen and (max-width:680px){
 nav .onglets {
