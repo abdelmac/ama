@@ -88,66 +88,68 @@ L.control.layers(baseLayers).addTo(map);
 
 
 
+
 function ouvrirPage() {
     var a = document.getElementById("search").value;
 
     if (a === "pain") {
-        window.open("../search/painalepin.html");
+        window.location.href="../search/painalepin.html";
     }
 
     if (a === "alepin") {
-        window.open("../search/painalepin.html");
+        window.location.href="../search/painalepin.html";
     }
 
 
     if (a === "viennoiserie") {
-        window.open("../search/croissant.html");
+        window.location.href="../search/croissant.html";
     }
 
     if (a === "mamoul") {
-        window.open("../search/mamoul.html");
+        window.location.href="../search/mamoul.html";
     }
 
     if (a === "hamburger") {
-        window.open("../search/burger.html");
+        window.location.href="../search/burger.html";
     }
 
     if (a === "burger") {
-        window.open("../search/burger.html");
+        window.location.href="../search/burger.html";
     }
 
 
 
     if (a === "youtube") {
-        window.open("https://www.youtube.com/");
+        window.location.href="https://www.youtube.com/";
     }
 
     if (a === "brun") {
-        window.open("../search/paindorge.html");
+        window.location.href="../search/paindorge.html";
     }
 
     if (a === "asmar") {
-        window.open("../search/paindorge.html");
+        window.location.href="../search/paindorge.html";
     }
 
     if (a === "shop") {
-        window.open("../product/product.html");
+        window.location.href="../search/product.html";
     }
 
     if (a === "mamoul") {
-        window.open("../search/mamoul.html");
+        window.location.href="../search/mamoul.html";
     }
 
     if (a === "kaak") {
-        window.open("../search/kaak.html");
+        window.location.href="../search/kaak.html";
     }
 
     if (a === "croissant") {
-      window.open("../search/croissant.html")
+      window.location.href="../search/croissant.html";
     }
 
 
 }
+
 
 var menu_toggle = document.querySelector('.menu_toggle');
 var menu = document.querySelector('.menu');
