@@ -1248,7 +1248,7 @@ footer{
 
 
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 670px){
 
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -1259,6 +1259,8 @@ footer{
     background: #f1f1f1;
     font-family: 'Montserrat', sans-serif;
   }
+
+
 
   /* Style initial de la barre de navigation */
   #navbar {
@@ -1286,7 +1288,7 @@ footer{
   .logotitre a {
       text-decoration: none;
       color: #05063e; /** bleu **/
-      font-size: 100%; /** 1.2rem  **/
+      font-size: 70%; /** 1.2rem  **/
       font-weight: bold;
   }
 
@@ -1295,7 +1297,7 @@ footer{
   }
 
   .logo {
-      width: 10%;
+      width: 7%;
       margin-top: 2%;
       margin-left: 3%;
       margin-right: 2%;
@@ -1323,6 +1325,7 @@ footer{
   .nav-item {
       text-decoration: none;
       padding: 2%;
+
   }
 
   .nav-item a {
@@ -1337,16 +1340,13 @@ footer{
   }
 
 
-  .burger-menu {
-      display: none;
-  }
 
   .nav-items {
       display: none;
       flex-direction: column;
       width: 100%;
       position: absolute;
-      top: 60px;
+      top: 25px;
       right: 0;
       background-color: #b8b3a7;
       text-align: center;
@@ -1356,19 +1356,12 @@ footer{
       display: flex;
   }
 
-  .nav-items li a {
-      margin: 0;
-      padding: 15px;
-      width: 100%;
-      box-sizing: border-box;
-  }
-
   .burger-menu {
       display: block;
       font-size: 1.5em;
       cursor: pointer;
       color: #05063e; /* Ajout de la couleur de texte */
-      margin-right: 15px; /* Ajout d'un espacement à droite */
+      margin-right: 0px; /* Ajout d'un espacement à droite */
   }
 
   .burger-menu.active {
@@ -1379,8 +1372,10 @@ footer{
       color: #787609;
   }
 
-  .nav-search {
-    width: 10%;
+  #navbar .nav-search .nav-search__el{
+    display: flex;
+    width: auto;
+
   }
 
 
