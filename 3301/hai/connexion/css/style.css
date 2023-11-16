@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+
+.container13{
+  position: sticky;
+  width:auto;
+  top: +10;
+  left: 0;
+  margin-bottom: : -650%;
+  margin-left:-650%;
+  padding-left:10px;
+  padding-right:10px;
+  display:flex;
+  text-align:center; /*This will result in centering the link text, which is probably what you want -brianjohnsondesign.com*/
+  background:    #0981ef;
+  border-radius: 28px;
+  padding:       20px 24px;
+  color:         #ffffff;
+  font:          normal bold 19px/1 "Open Sans", sans-serif;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+img{
+  height:60px;
+  width: 100px;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(https://images5.alphacoders.com/606/thumb-1920-606284.jpg);
+  border: solid 2px;
+  text-shadow: white 0px 0px 2px;
+  font-size: 16px;
+  background-size: 1540px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+/*#82ade6de*/
+
+.container {
+  position: relative;
+  width: 420px;
+  min-height: 490px;
+  height: auto;
+  max-height: 520px;
+  background-color:_blank;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+}
+
+
+.logo {
+  position: absolute;
+  top: 2%;
+  left: 51%;
+  transform: translate(-50%, 0);
+  width: 53px;
+  height: 55px;
+  border-radius: 60%;
+  box-shadow: 0px 5px 5px #ccc;
+  font-size: 1.8em;
+  background-color: #f0f6fb;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.tab-body {
+  position: relative;
+  display: none;
+
+  height: auto;
+  max-height: 320px;
+  padding: 15% 5%;
+  margin-top: 20%;
+  background-color: #fff;
+  color: #82ade6de;
+  box-shadow: 0px 5px 10px #7c8395;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+.tab-body.active {
+  display: block;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #82ade6de;
+  padding: 1.8% 0;
+  margin: 20px 0;
+}
+
+.row .input {
+  width: 90%;
+  border: 1px;
+  outline: 1px;
+  color: #82ade6de;
+  font-weight: 550;
+}
+.input::placeholder {
+  color: grey;
+}
+
+.link {
+  display: inline-block;
+  font-size: 0.8em;
+  width: 100%;
+  text-decoration: none;
+  color: #2b384f;
+  text-align: right;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  width: 120px;
+  height: 45px;
+  border-radius: 50px;
+  background-color: #6ba1f9;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tab-footer {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 30px;
+  display: flex;
+}
+
+.tab-link {
+  text-decoration: none;
+  color: #6ba1f9ee;
+  margin: 0 3%;
+}
+
+.tab-link.active {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    width: 80%;
+    min-width: 380px;
+    min-height: 490px;
+  }
+  .tab-body {
+    width: 100%;
+    padding: 15% 5%;
+    margin-top: 25%;
+    max-height: 420px;
+  }
+}
