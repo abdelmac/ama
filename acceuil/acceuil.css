@@ -1215,3 +1215,178 @@ footer{
     padding: 0px;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/** PARTIE SMARTPHONE **/
+/** PARTIE SMARTPHONE **/
+/** PARTIE SMARTPHONE **/
+/** PARTIE SMARTPHONE **/
+
+
+
+
+
+
+
+/** PARTIE SMARTPHONE **/
+/** PARTIE SMARTPHONE **/
+/** PARTIE SMARTPHONE **/
+/** PARTIE SMARTPHONE **/
+/** PARTIE SMARTPHONE **/
+
+
+
+
+
+@media only screen and (max-width: 1000px){
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f1f1f1;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* Style initial de la barre de navigation */
+  #navbar {
+      display: flex;
+      background-color: #fff;
+      color: #fff;
+      position: relative;
+      transition: top 10s;
+      height: 8%;
+      z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
+  }
+
+  /* Style lorsque la barre de navigation est fixée en haut de la page */
+  #navbar.fixed {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
+  }
+
+  .logotitre {
+      display: flex;
+      align-items: center;
+      margin-left: 3%;
+  }
+
+  .logotitre a {
+      text-decoration: none;
+      color: #05063e; /** bleu **/
+      font-size: 150%; /** 1.2rem  **/
+      font-weight: bold;
+  }
+
+  .logotitre a span {
+      color: #787609; /** or **/
+  }
+
+  .logo {
+      width: 7%;
+      margin-top: 2%;
+      margin-left: 3%;
+      margin-right: 2%;
+
+  }
+
+  .nav {
+      display: flex;
+      flex-direction: row;
+      margin-left: 10px;
+  }
+
+  /** les differentes pages du menu **/
+  .nav-items {
+      flex-grow: 1; /* Permet à la barre de navigation de prendre tout l'espace disponible */
+      list-style: none;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px;
+      margin-left: -60%;
+  }
+
+  .nav-item {
+      text-decoration: none;
+      padding: 2%;
+  }
+
+  .nav-item a {
+      text-decoration: none;
+      color: #05063e;
+      font-weight: 600;
+      margin-right: 20px;
+  }
+
+  .nav-item a:hover {
+      color: #787609;
+  }
+
+
+  .burger-menu {
+      display: none;
+  }
+
+  .nav-items {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #b8b3a7;
+      text-align: center;
+  }
+
+  .nav-items.show {
+      display: flex;
+  }
+
+  .nav-items li a {
+      margin: 0;
+      padding: 15px;
+      width: 100%;
+      box-sizing: border-box;
+  }
+
+  .burger-menu {
+      display: block;
+      font-size: 1.5em;
+      cursor: pointer;
+      color: #05063e; /* Ajout de la couleur de texte */
+      margin-right: 15px; /* Ajout d'un espacement à droite */
+  }
+
+  .burger-menu.active {
+      color: #05063e; /* Couleur du texte au survol */
+  }
+
+  .nav-item a:hover {
+      color: #787609;
+  }
+
+
+
+
+
+
+
+
+
+}
