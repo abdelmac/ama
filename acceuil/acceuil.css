@@ -137,6 +137,204 @@ body {
 }
 
 
+
+.team{
+  display: flex;
+  justify-content: center;
+}
+
+.pyramid {
+    text-align: center;
+}
+
+.level {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.block {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 150px;
+    background-color: #3498db;
+    margin: 0 2%;
+}
+
+/** MACHTA Samer **/
+.pp{
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+  background-size: 70px;
+  background-repeat: no-repeat;
+}
+
+/** WETZEL  Marie-therese **/
+.pp1{
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+  background-size: 80px;
+  background-repeat: no-repeat;
+}
+
+/** AMRI Chadli **/
+.pp2{
+  border-radius: 100%;
+  width: 80px;
+  height: 90px;
+  background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+  background-size: 70px;
+  background-repeat: no-repeat;
+}
+
+/** ALIA Ihssan **/
+.pp3{
+  border-radius: 100%;
+  width: 80px;
+  height: 100px;
+  background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+  background-size: 70px;
+  background-repeat: no-repeat;
+}
+
+/** CHAABAN Adnan **/
+.pp4{
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+  background-size: 80px;
+  background-repeat: no-repeat;
+}
+
+/** MACHTA Abdelkader **/
+.pp5{
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+  background-size: 80px;
+  background-repeat: no-repeat;
+}
+
+
+
+.block h1{
+  text-decoration-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.block h2{
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+.accroche p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  font-size: 1.8rem;
+  color: #05063e;
+  font-style: normal;
+}
+
+.cards {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+    font-family: sans-serif;
+    padding-top: 30px;
+}
+
+.cards * {
+    box-sizing: border-box;
+}
+
+.card h2{
+  color: #05063e;
+  font-size: 1.1rem;
+}
+
+.card__image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-top: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+.card__content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: #fafafa;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+.card__content > p:first-of-type {
+    margin-top: 0;
+}
+
+.card__content > p:last-of-type {
+    margin-bottom: 0;
+}
+
+.card__info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555555;
+    background: #eeeeee;
+    font-size: 0.8em;
+    border-bottom: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+.card__info i {
+    font-size: 0.9em;
+    margin-right: 8px;
+}
+
+.card__link {
+    color: #64968c;
+    text-decoration: none;
+}
+
+.card__link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
 /* phrase d'accroche */
 
 #home {
@@ -187,6 +385,128 @@ body {
 }
 
 
+
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 0;
+}
+
+.grille {
+    max-width: 1300px;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    /* border: 1px solid #333; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 10px;
+}
+.grid-item1 {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    background-image: url("https://lh3.googleusercontent.com/pw/ADCreHd6wdCnZ7uEH4Alf8hAe_J-nzNK24Wbe2ErUVyyvMSecmt4xO0jIesslQhtrNaX7tKxVejwGgnzcM4_9RtJO80whsqJJR6m_2UpZqP2kFxmiB8Np0Ga0nWVDU7xZpb8SJVAy5hyTW1HjBo384-cLAA=w659-h879-s-no?authuser=0");
+    background-size: 100%;
+}
+
+.grid-item2 {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    background-image: url("https://lh3.googleusercontent.com/pw/ADCreHcBQfsVN4G5fSHsim48ungp-OS2R3KYmAd5ia8ZjQus0xtss3SyCFIhwbuL645W5BeYfBn_I9hGMeOqta9pkMxsU3Mk3cHUfLXmyZzLf0X5s72Dml1NSN_hCVr3GWjwzwDMMxtI1Ek961Z-D3CrNQY=w659-h879-s-no?authuser=0");
+    background-size: 100%;
+}
+
+.grid-item3 {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    background-image: url("https://lh3.googleusercontent.com/pw/ADCreHfRJAxkNfsXCdhrrNrLisYu_n6WHfImVewYuR9nhZ1xb_T-YeaXRrkkAH4SL5PXfrrCwZaRL0cB9Otm6zh9RTmgUNNCaFPFby8ARupsZ6jke5tppfrJrhgsDFSY__PbMiN1XI9Cr-1OiDMcdcaNWk4=w659-h879-s-no?authuser=0");
+    background-size: 100%;
+}
+
+
+.grid-item4 {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    background-image: url("https://lh3.googleusercontent.com/pw/ADCreHfwLY1BqpYU8b6DmGYyw3yN0oYeKvQM8VNw9-k-R1rFucsoD1YoDnCujjzdIZD_WZC6dPuUqpNYQblU0_BCWUX-CuiD-h0GykJZzV2uckBI3AC8hkgBjcAxxf2pMzsJ-_T3drSePWW6z3jHRdMRa2A=w494-h879-s-no?authuser=0");
+    background-size: 100%;
+}
+
+.grid-item5 {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    background-image: url("https://lh3.googleusercontent.com/pw/ADCreHcHKcG2zITRAWMwFn9BOQi80oLHeSvjW5sSltrCjnoTYWynpwKQqIDAck2O4tZ3TXJAe_2YKAfp2mUiDriQiKRlrFRBCljSjMiBtOeHIAFg4369Xm4eE31b7nMjG-COxo2pexW7kbv0a5LeoIAPS_E=w659-h879-s-no?authuser=0");
+    background-size: 100%;
+}
+
+
+.grid-item6 {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    background-image: url("https://lh3.googleusercontent.com/pw/ADCreHd6wdCnZ7uEH4Alf8hAe_J-nzNK24Wbe2ErUVyyvMSecmt4xO0jIesslQhtrNaX7tKxVejwGgnzcM4_9RtJO80whsqJJR6m_2UpZqP2kFxmiB8Np0Ga0nWVDU7xZpb8SJVAy5hyTW1HjBo384-cLAA=w659-h879-s-no?authuser=0");
+    background-size: 100%;
+}
+
+.grid-item7 {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    background-image: url("https://lh3.googleusercontent.com/pw/ADCreHd6wdCnZ7uEH4Alf8hAe_J-nzNK24Wbe2ErUVyyvMSecmt4xO0jIesslQhtrNaX7tKxVejwGgnzcM4_9RtJO80whsqJJR6m_2UpZqP2kFxmiB8Np0Ga0nWVDU7xZpb8SJVAy5hyTW1HjBo384-cLAA=w659-h879-s-no?authuser=0");
+    background-size: 100%;
+}
+
+.grid-item8 {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    background-image: url("https://lh3.googleusercontent.com/pw/ADCreHd6wdCnZ7uEH4Alf8hAe_J-nzNK24Wbe2ErUVyyvMSecmt4xO0jIesslQhtrNaX7tKxVejwGgnzcM4_9RtJO80whsqJJR6m_2UpZqP2kFxmiB8Np0Ga0nWVDU7xZpb8SJVAy5hyTW1HjBo384-cLAA=w659-h879-s-no?authuser=0");
+    background-size: 100%;
+}
+
+.grid-item9 {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    background-image: url("https://lh3.googleusercontent.com/pw/ADCreHd6wdCnZ7uEH4Alf8hAe_J-nzNK24Wbe2ErUVyyvMSecmt4xO0jIesslQhtrNaX7tKxVejwGgnzcM4_9RtJO80whsqJJR6m_2UpZqP2kFxmiB8Np0Ga0nWVDU7xZpb8SJVAy5hyTW1HjBo384-cLAA=w659-h879-s-no?authuser=0");
+    background-size: 100%;
+}
+
+.grid-item10 {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    background-image: url("https://lh3.googleusercontent.com/pw/ADCreHd6wdCnZ7uEH4Alf8hAe_J-nzNK24Wbe2ErUVyyvMSecmt4xO0jIesslQhtrNaX7tKxVejwGgnzcM4_9RtJO80whsqJJR6m_2UpZqP2kFxmiB8Np0Ga0nWVDU7xZpb8SJVAy5hyTW1HjBo384-cLAA=w659-h879-s-no?authuser=0");
+    background-size: 100%;
+}
+
+.grid-item11 {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    background-image: url("https://lh3.googleusercontent.com/pw/ADCreHd6wdCnZ7uEH4Alf8hAe_J-nzNK24Wbe2ErUVyyvMSecmt4xO0jIesslQhtrNaX7tKxVejwGgnzcM4_9RtJO80whsqJJR6m_2UpZqP2kFxmiB8Np0Ga0nWVDU7xZpb8SJVAy5hyTW1HjBo384-cLAA=w659-h879-s-no?authuser=0");
+    background-size: 100%;
+}
+
+.grid-item12 {
+    width: 300px;
+    height: 300px;
+    background: #333;
+    background-image: url("https://lh3.googleusercontent.com/pw/ADCreHd6wdCnZ7uEH4Alf8hAe_J-nzNK24Wbe2ErUVyyvMSecmt4xO0jIesslQhtrNaX7tKxVejwGgnzcM4_9RtJO80whsqJJR6m_2UpZqP2kFxmiB8Np0Ga0nWVDU7xZpb8SJVAy5hyTW1HjBo384-cLAA=w659-h879-s-no?authuser=0");
+    background-size: 100%;
+}
 
 
 
