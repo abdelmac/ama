@@ -114,7 +114,7 @@ body {
         grid-template-rows: 200px 1fr 200px;
       }
 
-    }
+    
     .nav-items {
         display: none;
         flex-direction: column;
