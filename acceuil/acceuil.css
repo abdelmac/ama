@@ -551,8 +551,8 @@ body {
 }
 
 .car img{
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: ;
 }
 
 .car a{
@@ -572,12 +572,12 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
 }
-.list_service {
+.list_services {
     margin: 100px 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
