@@ -796,6 +796,7 @@ body {
 }
 
 .net-title {
+
   display: flex;
   justify-content: center;
   margin-top: 200px;
@@ -804,6 +805,11 @@ body {
   color: #05063e;
 }
 
+.net-title a {
+  color: #05063e;
+  text-decoration: none;
+  text-decoration-line: none;
+}
 
 #map {
   height: 600px;
@@ -824,6 +830,7 @@ body {
 }
 
 
+
 #cars li span.prix {
    color: #05063e ;
    font-weight: bold;
@@ -837,6 +844,13 @@ body {
 }
 
 #cars h1{
+  color: #05063e;
+  display: flex;
+  justify-content: center;
+
+}
+
+#cars h1 a u{
   color: #05063e;
 }
 .car {
@@ -1218,6 +1232,10 @@ footer{
 
 
 @media only screen and (max-width: 1000px) {
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
     #navbar{
       width: 100%;
@@ -1298,7 +1316,7 @@ footer{
     .main-section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(12, 350px);
+        grid-template-rows: repeat(11, 350px);
         margin: auto;
     /**  grid-template-columns: repeat(auto-fit, minmax(600px), 1fr); **/
       grid-gap: 10px;
@@ -1441,10 +1459,24 @@ footer{
       margin: 10px;
     }
 
+    .net-title {
+
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 1em;
+      color: #05063e;
+    }
+
+
+
     #map {
+      display: flex;
+      justify-content: center;
       height: 400px;
-      width: auto;
-      margin: 0;
+      width: 70%;
+      margin-left: 15% ;
     }
 
 
