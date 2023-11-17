@@ -827,6 +827,9 @@ body {
     font-size: 15px;
 }
 
+#cars h1{
+  color: #05063e;
+}
 .car {
   list-style: none;
   display: flex;
@@ -861,7 +864,7 @@ body {
     margin: auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     width: 100%;
 }
@@ -1671,6 +1674,11 @@ footer{
       align-items: center;
     }
 
+    #cars .section_title{
+      display: flex;
+      justify-content: center;
+    }
+
     li .car img{
       display: flex;
       justify-content: flex-start;
@@ -1681,6 +1689,32 @@ footer{
       display: flex;
       justify-content: flex-start;
     }
+
+    /* social */
+
+
+    .sidebar-social-media__content {
+      padding: 0.5rem 1rem;
+    }
+
+    .sidebar-social-media__content h3 {
+      font-size: 1rem;
+      border-bottom: #fff solid 1px;
+
+    }
+
+
+    .sidebar-social-media__content_icon i {
+      font-size: 1.2rem;
+      margin-right: 20px;
+      cursor: pointer;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 100%;
+    }
+
+
+
 
 
 
