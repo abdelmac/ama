@@ -849,7 +849,7 @@ body {
 .images ul{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   flex-direction: row;
 }
 
