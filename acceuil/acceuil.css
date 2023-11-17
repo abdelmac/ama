@@ -1264,10 +1264,13 @@ nav .onglets {
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: #b8b3a7;
+        background-color: #05063e;
         text-align: center;
     }
 
+    .nav-item a {
+      color: #fff;
+    }
     .nav-items.show {
         display: flex;
     }
