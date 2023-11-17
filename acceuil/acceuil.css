@@ -203,7 +203,9 @@ body {
 
 
 
-
+#au choix h1{
+  text-align: center;
+}
 
 
 
@@ -856,7 +858,7 @@ body {
     flex-direction: row;
 }
 .list_services {
-    margin: 100px 0;
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
