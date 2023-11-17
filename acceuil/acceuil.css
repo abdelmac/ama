@@ -825,6 +825,9 @@ body {
     font-size: 15px;
 }
 
+#cars h1{
+  color: #05063e;
+}
 .car {
   list-style: none;
   display: flex;
@@ -1669,6 +1672,11 @@ footer{
       align-items: center;
     }
 
+    #cars .section_title{
+      display: flex;
+      justify-content: center;
+    }
+
     li .car img{
       display: flex;
       justify-content: flex-start;
@@ -1702,6 +1710,7 @@ footer{
       padding: 20px;
       border-radius: 100%;
     }
+
 
 
 
