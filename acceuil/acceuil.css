@@ -1573,6 +1573,7 @@ nav .onglets {
       justify-content: center;
       flex-direction: row;
       margin-left: 10px;
+      margin-right: 15px;
       right: 0;
   }
 
@@ -1599,12 +1600,12 @@ nav .onglets {
   .nav-item {
       text-decoration: none;
       padding: 2%;
-
+      background-color:
   }
 
   .nav-item a {
       text-decoration: none;
-      color: #05063e;
+      color: #fff;
       font-weight: 600;
       margin-right: 20px;
   }
@@ -1622,7 +1623,7 @@ nav .onglets {
       position: absolute;
       top: 25px;
       right: 0;
-      background-color: #b8b3a7;
+      background-color: #05063e;
       text-align: center;
   }
 
@@ -1839,7 +1840,7 @@ nav .onglets {
       flex-direction: column;
     }
 
-    
+
     .service {
     padding: 0px;
     margin: 0px;
