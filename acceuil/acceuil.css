@@ -868,6 +868,20 @@ body {
     justify-content: center;
     width: 100%;
 }
+
+.list_services {
+  max-width: 1300px;
+  width: 80%;
+  height: auto;
+  margin: 30px auto;
+  /* border: 1px solid #333; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+
 .service {
     width: 25%;
     text-align: center;
