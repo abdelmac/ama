@@ -1576,7 +1576,7 @@ footer{
     }
 
     .glide {
-      width: 60%;
+      width: 95%;
       margin: auto;
     }
 
@@ -1584,7 +1584,7 @@ footer{
       list-style: none;
       border-radius: 100%;
       text-align: center;
-      padding: 20px;
+      padding: 0px;
     }
 
     .glide__slide img {
@@ -1596,7 +1596,7 @@ footer{
       border: #fff solid 6px;
     }
 
-    .glide__slide2 h4 {
+    .glide__slide h4 {
       color: #fff;
       font-size: 0.7rem;
       margin: 10px;
