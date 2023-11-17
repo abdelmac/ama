@@ -140,7 +140,7 @@ body {
 
 /** WETZEL  Marie-therese **/
 .pp1{
-  border-radius: 50%;
+  border-radius: 100%;
   width: 90px;
   height: 90px;
   background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
@@ -152,7 +152,7 @@ body {
 .pp2{
   border-radius: 100%;
   width: 80px;
-  height: 80px;
+  height: 90px;
   background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
   background-size: 70px;
   background-repeat: no-repeat;
@@ -170,7 +170,7 @@ body {
 
 /** CHAABAN Adnan **/
 .pp4{
-  border-radius: 50%;
+  border-radius: 100%;
   width: 90px;
   height: 90px;
   background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
@@ -353,6 +353,7 @@ body {
 
 
 *, ::before, ::after {
+
 }
 .meilleur h1 {
     text-align: center;
@@ -798,7 +799,7 @@ body {
 #map {
   height: 600px;
   width: 800px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 /* Style pour le marqueur rouge */
@@ -829,11 +830,6 @@ body {
 #cars h1{
   color: #05063e;
 }
-
-#cars .section_title{
-  display: flex;
-  justify-content: center;
-}
 .car {
   list-style: none;
   display: flex;
@@ -853,7 +849,7 @@ body {
 .images ul{
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   flex-direction: row;
 }
 
@@ -875,16 +871,15 @@ body {
 
 
 .service {
-
+    width: 25%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    padding: 5px;
-    margin: 10px;
-    margin-bottom: 70px;
+    padding: 20px;
+    margin: 20px;
 }
 .service i {
     font-size: 25px;
@@ -893,7 +888,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #05063e ;
+    background-color: #ffffff ;
     color: #05063e;
     border-radius: 50%;
     margin-bottom: 10px;
@@ -1131,7 +1126,7 @@ footer .servicesi .service p{
     max-width: 300px;
 }
 footer #contact{
-    color: ;
+    color: rgb(181, 181, 181);
 }
 
 footer .sidebar-social-media__content_icon{
@@ -1383,18 +1378,6 @@ footer{
       margin: 0;
     }
 
-        .list_services {
-          max-width: 1300px;
-          width: 80%;
-          height: auto;
-          margin: 30px auto;
-          /* border: 1px solid #333; */
-          display: grid;
-          grid-template-columns: repeat(auto-fit, 800px);
-          justify-content: center;
-          grid-gap: 10px;
-        }
-
 
 
 }
@@ -1446,14 +1429,12 @@ footer{
   /* Style initial de la barre de navigation */
   #navbar {
       display: flex;
-      justify-content: space-between;
+      width: 100%;
       background-color: #fff;
       color: #fff;
       position: top;
       transition: top 10s;
       height: 50px;
-      left:0;
-      max-width: 100%;
       z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
   }
 
@@ -1461,10 +1442,7 @@ footer{
   #navbar.fixed {
       position: fixed;
       top: 0;
-      padding: 0;
-      left: 0;
-      right: 5px;
-      max-width: 100%;
+      width: 100%;
       z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
   }
 
@@ -1473,15 +1451,15 @@ footer{
     }
 
     .logo {
-      margin-left: 0px;
-      width: 35px;
+      margin-top: -10px;
+      width: 25px;
     }
 
   .SideBar{
       grid-column-start: 1;
       grid-column-end: 4;
-      grid-row-start: 8;
-      grid-row-end: 12;
+      grid-row-start: 5;
+      grid-row-end: 9;
       background-color: #dfcece;
       display: grid;
       grid-template-columns: auto;
@@ -1494,7 +1472,6 @@ footer{
       left: auto;
       flex-direction: row;
       margin-left: 10px;
-      margin-top: 10px;
   }
   i.las la-search{
     display: none;
@@ -1511,13 +1488,8 @@ footer{
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 20px;
+      margin-top: 50px;
       margin-left: -60%;
-  }
-
-  .nav ul {
-    margin-left: 0px;
-    padding-left: 0px;
   }
 
   .nav-item {
@@ -1596,10 +1568,6 @@ footer{
   }
 
 
-  .main {
-    max-width: fit-content;
-  }
-
 
   .article-text h2 , .article-text__footer-1 h2 , .article-text__footer-2 h2 {
     font-size: 15px;
@@ -1609,34 +1577,12 @@ footer{
 
   .main-section {
     display: grid;
-    font-size: 12px;
     grid-template-columns: repeat(auto-fit, minmax(250px), 1fr);
     grid-gap: 2em;
     width: 98%;
     margin: auto;
+    padding: 3em;
   }
-
-  .article{
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
-
-  .article-footer-1{
-    grid-column-start:  1 ;
-    grid-column-end:    3 ;
-  }
-
-
-
-  .article-footer-2{
-    grid-column-start: 3 ;
-    grid-column-end:  4 ;
-  }
-
-
-
-
-
 
   ul .glide__slide{
     margin-left: 50px;
@@ -1748,15 +1694,6 @@ footer{
       justify-content: flex-start;
     }
 
-    #services {
-      max-width: 100%;
-    }
-
-    #map {
-      padding: 0;
-      margin: 0;
-    }
-
     /* social */
 
 
@@ -1780,13 +1717,9 @@ footer{
       border-radius: 100%;
     }
 
-    .services {
-      padding: 0px;
-    }
-
     .list_services {
       max-width: 1300px;
-      width: 100%;
+      width: 80%;
       height: auto;
       margin: 30px auto;
       /* border: 1px solid #333; */
@@ -1796,59 +1729,10 @@ footer{
       grid-gap: 10px;
     }
 
-     .service {
-      margin: 1px;
-      padding: 0px;
-    }
-
-    #contact {
-      width: 100%;
-      margin-left: 0%;
-      padding:2%;
-    }
-
-
-
-    footer{
-        margin-top: 5px;
-        padding: 30px 10px;
-        width: 100%;
-    }
-    footer h1{
-        font-family: 'Playfair Display', serif;
-        border-bottom: 1px solid white;
-        width: 20px;
-        padding-bottom: 5px;
-    }
-
-
-    .servicesi .service {
-      margin: 0px;
-      margin-right: 0;
-    }
-
-    footer .sidebar-social-media_content{
-      width: 100px;
-    }
-
-    footer .sidebar-social-media__content_icon{
-      margin-left: 0px;
-
-    }
-
-    footer .sidebar-social-media__content_icon span a i{
-      width: 12px;
-      height: 12px;
-    }
 
 
 
 
-    .servicesi .servicei .serv{
-
-      height: 50px;
-      width: 50px;
-    }
 
 
 
