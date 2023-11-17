@@ -1289,12 +1289,10 @@ footer{
       color: #05063e;
     }
 
-    .slider-container{
-      display:none;
-    }
+
 
     /* slider 2*/
-    .slider-container2 {
+    .slider-container {
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('https://lh3.googleusercontent.com/pw/ADCreHfmHUzUsxCY9ONgeoSehI4G7iUQXK4ZhG5xMfQnr2UJc_kEKwd_fIPiGafh7mwnspYji7-7KxmIxNpn9h2IbyaTJF0bBtu_M_rLsVSntP1CtITyrA4p47iYPied6M4OOVC4Rc5dlXQhUT3PCGXnpuaO=w1171-h879-s-no?authuser=0');
       height: 400px;
@@ -1305,10 +1303,11 @@ footer{
       background-position: bottom;
     }
 
-    .glide2 {
+    .glide {
       width: 60%;
       margin: auto;
     }
+
 
     .glide__slide {
       border-radius: 100%;
@@ -1318,8 +1317,8 @@ footer{
 
     .glide__slide img {
       display: block;
-      height: 180px;
-      width: 180px;
+      height: 110px;
+      width: 110px;
       border-radius: 100%;
       object-fit: cover;
       border: #fff solid 6px;
@@ -1327,7 +1326,7 @@ footer{
 
     .glide__slide h4 {
       color: #fff;
-      font-size: 0.9rem;
+      font-size: 0.7rem;
       margin: 10px;
     }
 
@@ -1357,7 +1356,7 @@ footer{
       color: #000;
     }
 
-    .slider-container2 {
+    .slider-container {
       margin-top: 5px;
     }
 
@@ -1562,12 +1561,9 @@ footer{
       padding-left: 500px;
     }
 
-    .slider-container{
-      display:none;
-    }
 
     /* slider 2 */
-    .slider-container2 {
+    .slider-container {
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('https://lh3.googleusercontent.com/pw/ADCreHfmHUzUsxCY9ONgeoSehI4G7iUQXK4ZhG5xMfQnr2UJc_kEKwd_fIPiGafh7mwnspYji7-7KxmIxNpn9h2IbyaTJF0bBtu_M_rLsVSntP1CtITyrA4p47iYPied6M4OOVC4Rc5dlXQhUT3PCGXnpuaO=w1171-h879-s-no?authuser=0');
       height: 400px;
@@ -1579,12 +1575,13 @@ footer{
       background-position: bottom;
     }
 
-    .glide2 {
+    .glide {
       width: 60%;
       margin: auto;
     }
 
     .glide__slide {
+      list-style: none;
       border-radius: 100%;
       text-align: center;
       padding: 20px;
@@ -1592,8 +1589,8 @@ footer{
 
     .glide__slide img {
       display: block;
-      height: 180px;
-      width: 180px;
+      height: 70px;
+      width: 70px;
       border-radius: 100%;
       object-fit: cover;
       border: #fff solid 6px;
@@ -1601,7 +1598,7 @@ footer{
 
     .glide__slide2 h4 {
       color: #fff;
-      font-size: 0.9rem;
+      font-size: 0.7rem;
       margin: 10px;
     }
 
@@ -1631,7 +1628,7 @@ footer{
       color: #000;
     }
 
-    .slider-container2 {
+    .slider-container {
       margin-top: 5px;
     }
 

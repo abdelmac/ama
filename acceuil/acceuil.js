@@ -30,7 +30,7 @@ document.querySelector('.burger-menu').addEventListener('click', () => {
 
 new Glide('.glide', {
   type: 'carousel',
-  perView: 4,
+  perView: 3,
   focusAt: 'center',
   autoplay: 3000,
   arrows: {
@@ -40,9 +40,9 @@ new Glide('.glide', {
 }).mount();
 
 
-new Glide('.glide2', {
+new Glide2('.glide2', {
   type: 'carousel',
-  perView: 2,
+  perView: 5,
   focusAt: 'center',
   autoplay: 3000,
   arrows: {
