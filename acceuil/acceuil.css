@@ -1446,12 +1446,13 @@ footer{
   /* Style initial de la barre de navigation */
   #navbar {
       display: flex;
-      width: 100%;
+      justify-content: space-between;
       background-color: #fff;
       color: #fff;
       position: top;
       transition: top 10s;
       height: 50px;
+      max-width: 100%;
       z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
   }
 
@@ -1459,7 +1460,7 @@ footer{
   #navbar.fixed {
       position: fixed;
       top: 0;
-      width: 100%;
+      max-width: 100%;
       z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
   }
 
@@ -1598,7 +1599,6 @@ footer{
     grid-gap: 2em;
     width: 98%;
     margin: auto;
-    padding: 3em;
   }
 
   ul .glide__slide{
@@ -1750,6 +1750,47 @@ footer{
 
 
 
+    footer{
+        margin-top: 5px;
+        border-top: 5px solid #6f6f6f;
+        background-color: #05063e ;
+        color: #fff;
+        padding: 30px 10px;
+    }
+    footer h1{
+        font-family: 'Playfair Display', serif;
+        border-bottom: 1px solid white;
+        width: 20px;
+        padding-bottom: 5px;
+    }
+
+
+    .servicesi .service {
+      margin: 0px;
+      margin-right: 0;
+    }
+
+    footer .sidebar-social-media_content{
+      width: 100px;
+    }
+
+    footer .sidebar-social-media__content_icon{
+      margin-left: 0px;
+    }
+
+    footer .sidebar-social-media__content_icon span a i{
+      width: 12px;
+      height: 12px;
+    }
+
+
+
+
+    .servicesi .servicei .serv{
+
+      height: 50px;
+      width: 50px;
+    }
 
 
 
