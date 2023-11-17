@@ -1450,7 +1450,7 @@ footer{
   }
 
   #home .left {
-    width: 50%;
+    width: 100%;
     margin-left: -160px;
   }
 
@@ -1460,7 +1460,7 @@ footer{
   }
 
   #home .right {
-    width: 50%;
+    width: 100%;
     margin-left: -180px;
   }
 
