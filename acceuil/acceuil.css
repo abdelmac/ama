@@ -1341,7 +1341,7 @@ footer{
       color: #fff;
       position: top;
       transition: top 10s;
-      height: 8%;
+      height: 50px;
       z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
   }
 
