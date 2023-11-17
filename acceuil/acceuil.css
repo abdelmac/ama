@@ -351,9 +351,7 @@ body {
 
 
 *, ::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
 }
 .meilleur h1 {
     text-align: center;
@@ -914,7 +912,6 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 12%;
 
 }
 .localisation_contact_div {
@@ -1368,6 +1365,12 @@ footer{
     }
 
 
+    #map {
+      height: 400px;
+      width: auto;
+      margin: 0;
+    }
+
 }
 
 
@@ -1649,6 +1652,25 @@ footer{
 
     .slider-container {
       margin-top: 5px;
+    }
+
+    #cars ul{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .car {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: flex-end;
+    }
+
+    li .car img{
+      display: flex;
+      justify-content: flex-start;
     }
 
 
