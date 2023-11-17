@@ -1205,6 +1205,10 @@ footer{
 
 
 @media only screen and (max-width: 1000px) {
+
+    #navbar{
+      width: 100%;
+    }
     .sidebar{
         grid-column-start: 1;
         grid-column-end: 4;
@@ -1258,6 +1262,21 @@ footer{
 
     .nav-item a:hover {
         color: #787609;
+    }
+
+    #home .left{
+      width: 100%;
+    }
+
+    #home .left h1 {
+        margin-top: 100px;
+        font-size: 30px;
+    }
+
+
+
+    #home .right img{
+      width: 200px;
     }
 
     .article-text h2 , .article-text__footer-1 h2 , .article-text__footer-2 h2 {
@@ -1317,6 +1336,7 @@ footer{
   /* Style initial de la barre de navigation */
   #navbar {
       display: flex;
+      width: 600px;
       background-color: #fff;
       color: #fff;
       position: top;
@@ -1333,6 +1353,14 @@ footer{
       z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
   }
 
+    .logotitre {
+      font-size: 10px;
+    }
+
+    .logo {
+      margin-top: -10px;
+      width: 25px;
+    }
 
   .SideBar{
       grid-column-start: 1;
@@ -1419,6 +1447,25 @@ footer{
 
   .nav-item a:hover {
       color: #787609;
+  }
+
+  #home .left {
+    width: 50%;
+    margin-left: -160px;
+  }
+
+  #home .left h1 {
+      margin-top: 100px;
+      font-size: 20px;
+  }
+
+  #home .right {
+    width: 50%;
+    margin-left: -180px;
+  }
+
+  #home .right img{
+    width: 200px;
   }
 
   #navbar .nav-search .nav-search__el{
