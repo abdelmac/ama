@@ -1216,7 +1216,16 @@ footer{
 
     #navbar{
       width: 100%;
+      left:0;
+      right:0;
     }
+
+    #navbar .fixed{
+      width: 100%
+      left: 0;
+      right: 0;
+    }
+
     .sidebar{
         grid-column-start: 1;
         grid-column-end: 4;
@@ -1442,6 +1451,7 @@ footer{
   #navbar.fixed {
       position: fixed;
       top: 0;
+      padding: 0;
       width: 100%;
       z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
   }
@@ -1692,6 +1702,11 @@ footer{
     .cars{
       display: flex;
       justify-content: flex-start;
+    }
+
+    #contact {
+      padding: 2px;
+      width: 100%
     }
 
     /* social */
