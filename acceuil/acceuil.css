@@ -1482,6 +1482,109 @@ nav .onglets {
 
 
 
+
+    .team{
+      display: flex;
+      justify-content: center;
+    }
+
+    .pyramid {
+        text-align: center;
+    }
+
+    .levelp {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .levelp .blockp {
+        text-decoration: none;
+
+        width: 120px;
+        height: 170px;
+        background-color: #3498db;
+        margin: 0 2%;
+    }
+
+    /** MACHTA Samer **/
+    .pp{
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+      background-size: 70px;
+      background-repeat: no-repeat;
+    }
+
+    /** WETZEL  Marie-therese **/
+    .pp1{
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+      background-size: 50px;
+      background-repeat: no-repeat;
+    }
+
+    /** AMRI Chadli **/
+    .pp2{
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+      background-size: 50px;
+      background-repeat: no-repeat;
+    }
+
+    /** ALIA Ihssan **/
+    .pp3{
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+      background-size: 50px;
+      background-repeat: no-repeat;
+    }
+
+    /** CHAABAN Adnan **/
+    .pp4{
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+      background-size: 50px;
+      background-repeat: no-repeat;
+    }
+
+    /** MACHTA Abdelkader **/
+    .pp5{
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+      background-size: 50px;
+      background-repeat: no-repeat;
+    }
+
+
+
+    .blockp h1{
+      text-decoration-style: none;
+      text-decoration: none;
+      font-size: 0.5rem;
+    }
+
+    .blockp h2{
+      text-decoration: none;
+      font-size: 0.3rem;
+    }
+
+
+
+
+
+
 }
 
 
@@ -1869,6 +1972,109 @@ nav .onglets {
       width: 110%;
       font-size: 0.72rem;
     }
+
+
+
+    .team{
+      display: flex;
+      justify-content: center;
+    }
+
+    .pyramid {
+        text-align: center;
+    }
+
+    .levelp {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .blockp {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 150px;
+        background-color: #3498db;
+        margin: 0 2%;
+    }
+
+    /** MACHTA Samer **/
+    .pp{
+      border-radius: 100%;
+      width: 90px;
+      height: 90px;
+      background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+      background-size: 70px;
+      background-repeat: no-repeat;
+    }
+
+    /** WETZEL  Marie-therese **/
+    .pp1{
+      border-radius: 100%;
+      width: 90px;
+      height: 90px;
+      background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+      background-size: 80px;
+      background-repeat: no-repeat;
+    }
+
+    /** AMRI Chadli **/
+    .pp2{
+      border-radius: 100%;
+      width: 80px;
+      height: 90px;
+      background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+      background-size: 70px;
+      background-repeat: no-repeat;
+    }
+
+    /** ALIA Ihssan **/
+    .pp3{
+      border-radius: 100%;
+      width: 80px;
+      height: 100px;
+      background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+      background-size: 70px;
+      background-repeat: no-repeat;
+    }
+
+    /** CHAABAN Adnan **/
+    .pp4{
+      border-radius: 100%;
+      width: 90px;
+      height: 90px;
+      background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+      background-size: 80px;
+      background-repeat: no-repeat;
+    }
+
+    /** MACHTA Abdelkader **/
+    .pp5{
+      border-radius: 100%;
+      width: 90px;
+      height: 90px;
+      background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
+      background-size: 80px;
+      background-repeat: no-repeat;
+    }
+
+
+
+    .blockp h1{
+      text-decoration-style: none;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .blockp h2{
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+
 
 
 
