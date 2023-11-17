@@ -541,6 +541,10 @@ body {
   margin-top: 5px;
 }
 
+.slider-container2 {
+  display: none;
+}
+
 /*  */
 .main {
   background-image: url("https://lh3.googleusercontent.com/pw/ADCreHfSyKwR8uvJpexhbivesrwWaTjmmHLpVJ6PUEh6lFBHZbE2FoL7ZP_LOCgHftwy_DhDH7ZpPU16nF__PukOb57YIVXQIUkuu1KFHzG3mj77DBTRis6ENnvC5ghRo4Rum9eXb23uS2OMEgp7JKiUJIU=w1509-h879-s-no?authuser=0");
@@ -1285,6 +1289,77 @@ footer{
       color: #05063e;
     }
 
+    .slider-container{
+      display:none;
+    }
+
+    /* slider 2*/
+    .slider-container2 {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://lh3.googleusercontent.com/pw/ADCreHfmHUzUsxCY9ONgeoSehI4G7iUQXK4ZhG5xMfQnr2UJc_kEKwd_fIPiGafh7mwnspYji7-7KxmIxNpn9h2IbyaTJF0bBtu_M_rLsVSntP1CtITyrA4p47iYPied6M4OOVC4Rc5dlXQhUT3PCGXnpuaO=w1171-h879-s-no?authuser=0');
+      height: 400px;
+      display: flex;
+      align-items: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+
+    .glide2 {
+      width: 60%;
+      margin: auto;
+    }
+
+    .glide__slide {
+      border-radius: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .glide__slide img {
+      display: block;
+      height: 180px;
+      width: 180px;
+      border-radius: 100%;
+      object-fit: cover;
+      border: #fff solid 6px;
+    }
+
+    .glide__slide h4 {
+      color: #fff;
+      font-size: 0.9rem;
+      margin: 10px;
+    }
+
+    .glide__arrows {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .glide__arrow {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 20px;
+      border: none;
+      padding: 10px 15px;
+      margin: 0 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .glide__arrow:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .slider-container2 {
+      margin-top: 5px;
+    }
 
 
 }
@@ -1336,7 +1411,7 @@ footer{
   /* Style initial de la barre de navigation */
   #navbar {
       display: flex;
-      width: 600px;
+      width: 100%;
       background-color: #fff;
       color: #fff;
       position: top;
@@ -1451,7 +1526,7 @@ footer{
 
   #home .left {
     width: 100%;
-    margin-left: -60px;
+    margin-left: 10px;
   }
 
   #home .left h1 {
@@ -1461,7 +1536,7 @@ footer{
 
   #home .right {
     width: 100%;
-    margin-left: -80px;
+    margin-left: 10px;
   }
 
   #home .right img{
@@ -1479,7 +1554,86 @@ footer{
     color: #05063e;
   }
 
+  ul .glide__slide{
+    margin-left: 50px;
+  }
 
+    .glide__slides {
+      padding-left: 500px;
+    }
+
+    .slider-container{
+      display:none;
+    }
+
+    /* slider 2 */
+    .slider-container2 {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://lh3.googleusercontent.com/pw/ADCreHfmHUzUsxCY9ONgeoSehI4G7iUQXK4ZhG5xMfQnr2UJc_kEKwd_fIPiGafh7mwnspYji7-7KxmIxNpn9h2IbyaTJF0bBtu_M_rLsVSntP1CtITyrA4p47iYPied6M4OOVC4Rc5dlXQhUT3PCGXnpuaO=w1171-h879-s-no?authuser=0');
+      height: 400px;
+      display: flex;
+
+      align-items: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+
+    .glide2 {
+      width: 60%;
+      margin: auto;
+    }
+
+    .glide__slide {
+      border-radius: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .glide__slide img {
+      display: block;
+      height: 180px;
+      width: 180px;
+      border-radius: 100%;
+      object-fit: cover;
+      border: #fff solid 6px;
+    }
+
+    .glide__slide2 h4 {
+      color: #fff;
+      font-size: 0.9rem;
+      margin: 10px;
+    }
+
+    .glide__arrows {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .glide__arrow {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 20px;
+      border: none;
+      padding: 10px 15px;
+      margin: 0 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .glide__arrow:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .slider-container2 {
+      margin-top: 5px;
+    }
 
 
 

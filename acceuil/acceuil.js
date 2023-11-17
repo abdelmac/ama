@@ -27,6 +27,32 @@ document.querySelector('.burger-menu').addEventListener('click', () => {
     document.querySelector('.nav-items').classList.toggle('show');
 });
 
+
+new Glide('.glide', {
+  type: 'carousel',
+  perView: 4,
+  focusAt: 'center',
+  autoplay: 3000,
+  arrows: {
+    prev: '.glide__arrow--left',
+    next: '.glide__arrow--right',
+  },
+}).mount();
+
+
+new Glide('.glide2', {
+  type: 'carousel',
+  perView: 2,
+  focusAt: 'center',
+  autoplay: 3000,
+  arrows: {
+    prev: '.glide__arrow--left',
+    next: '.glide__arrow--right',
+  },
+}).mount();
+
+
+
 // Initialisez la carte centrée sur l'Europe
 const map = L.map('map').setView([49.07081058368201, 6.689774695035996], 6 );
 
