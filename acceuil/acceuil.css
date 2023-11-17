@@ -869,18 +869,6 @@ body {
     width: 100%;
 }
 
-.list_services {
-  max-width: 1300px;
-  width: 80%;
-  height: auto;
-  margin: 30px auto;
-  /* border: 1px solid #333; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
-  justify-content: center;
-  grid-gap: 10px;
-}
-
 
 .service {
     width: 25%;
@@ -1390,6 +1378,8 @@ footer{
       margin: 0;
     }
 
+
+
 }
 
 
@@ -1725,6 +1715,18 @@ footer{
       background-color: #fff;
       padding: 20px;
       border-radius: 100%;
+    }
+
+    .list_services {
+      max-width: 1300px;
+      width: 80%;
+      height: auto;
+      margin: 30px auto;
+      /* border: 1px solid #333; */
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 200px);
+      justify-content: center;
+      grid-gap: 10px;
     }
 
 
