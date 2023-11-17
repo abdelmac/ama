@@ -883,7 +883,7 @@ body {
     justify-content: space-between;
     flex-direction: column;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    padding: 20px;
+    padding: -9px;
     margin: 20px;
 }
 .service i {
@@ -1383,18 +1383,17 @@ footer{
       margin: 0;
     }
 
-    .list_services {
-      max-width: 1300px;
-      width: 80%;
-      height: auto;
-      margin: 30px auto;
-      /* border: 1px solid #333; */
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 300px);
-      justify-content: center;
-      grid-gap: 50px;
-    }
-
+        .list_services {
+          max-width: 1300px;
+          width: 80%;
+          height: auto;
+          margin: 30px auto;
+          /* border: 1px solid #333; */
+          display: grid;
+          grid-template-columns: repeat(auto-fit, 800px);
+          justify-content: center;
+          grid-gap: 10px;
+        }
 
 
 
