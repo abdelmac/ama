@@ -1200,10 +1200,7 @@ nav .onglets {
 .main .content .card{
     display: block;
 }
-footer{
-    padding: 0px;
-}
-}
+
 
 
 /** MODE TABLETTE **/
@@ -1815,6 +1812,7 @@ footer{
 
     .sidebar-social-media__content {
       padding: 0.5rem 1rem;
+      box-shadow: 0;
     }
 
     .sidebar-social-media__content h3 {
@@ -1841,10 +1839,12 @@ footer{
       flex-direction: column;
     }
 
+    
     .service {
-      padding: 0px;
-      margin: 0px;
-      width: 100%;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    box-shadow: none;
     }
 
     .list_services {
@@ -1860,6 +1860,11 @@ footer{
     }
 
 
+    footer {
+      padding: 0;
+      width: 110%;
+      font-size: 0.72rem;
+    }
 
 
 
