@@ -1546,7 +1546,7 @@ footer{
       top: 0;
       padding: 0;
       width: 100%;
-      right: 0;
+      right: 5px;
       justify-content: space-between;
       z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
   }
@@ -1595,7 +1595,7 @@ footer{
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 50px;
+      margin-top: 25px;
       margin-left: -60%;
   }
 
