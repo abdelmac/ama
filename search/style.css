@@ -534,6 +534,7 @@ main:before{
   padding: 1rem 3rem;
 }
 
+
 .sidebar-social-media__content h3 {
   color: #fff;
   font-size: 1.5rem;
@@ -558,7 +559,6 @@ main:before{
   background-color: #afa3ff;
   animation: 3s;
 }
-
 
 #map {
   height: 600px;
@@ -860,7 +860,6 @@ header .menu.responsive {
 
 }
 
-
 footer{
     margin-top: 5px;
     border-top: 5px solid #6f6f6f;
@@ -940,7 +939,477 @@ nav .onglets {
 .main .content .card{
     display: block;
 }
-footer{
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #navbar{
+      width: 100%;
+      left:0;
+      right:0;
+    }
+
+    #navbar .fixed{
+      width: 100%
+      left: 0;
+      right: 0;
+    }
+
+
+
+
+      .article-text h2 , .article-text__footer-1 h2 , .article-text__footer-2 h2 {
+        font-size: 30px;
+        font-weight: 700;
+        color: #05063e;
+      }
+
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #05063e;
+        text-align: center;
+    }
+
+    .nav-item a {
+      color: #fff;
+    }
+    .nav-items.show {
+        display: flex;
+    }
+
+    .nav-items li a {
+        margin: 0;
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .burger-menu {
+        display: block;
+        font-size: 1.5em;
+        cursor: pointer;
+        color: #05063e; /* Ajout de la couleur de texte */
+        margin-right: 5px; /* Ajout d'un espacement à droite */
+        margin-top: 7px;
+    }
+
+    .burger-menu.active {
+        color: #05063e; /* Couleur du texte au survol */
+    }
+
+    .nav-item a:hover {
+        color: #787609;
+    }
+
+    #home .left{
+      width: 100%;
+    }
+
+    #home .left h1 {
+        margin-top: 100px;
+        font-size: 30px;
+    }
+
+
+
+    #home .right img{
+      width: 200px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    #services {
+      padding: 2px;
+    }
+
+    .service {
+      padding: 2px;
+      margin: 0px;
+
+    }
+
+    .list_services {
+      margin: 10px;
+    }
+
+    .net-title {
+
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 1em;
+      color: #05063e;
+    }
+
+
+
+    #map {
+      display: flex;
+      justify-content: center;
+      height: 400px;
+      width: 70%;
+      margin-left: 15% ;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 670px){
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f1f1f1;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+
+  /* Style initial de la barre de navigation */
+  #navbar {
+      display: flex;
+      width: 100%;
+      background-color: #fff;
+      color: #fff;
+      position: top;
+      transition: top 10s;
+      height: 50px;
+      z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
+  }
+
+  /* Style lorsque la barre de navigation est fixée en haut de la page */
+  #navbar.fixed {
+      position: fixed;
+      top: 0;
+      padding: 0;
+      width: 100%;
+      right: 5px;
+      justify-content: space-around;
+      z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
+  }
+
+    .logotitre {
+      font-size: 10px;
+    }
+
+    .logo {
+      margin-top: -10px;
+      width: 25px;
+    }
+
+  .SideBar{
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 7;
+      grid-row-end: 12;
+      background-color: #dfcece;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 200px 1fr 200px;
+    }
+
+  .nav {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin-left: 10px;
+      margin-right: 15px;
+      right: 0;
+  }
+
+
+  i.las la-search{
+    display: none;
+  }
+  .searchIput{
+    display: flex;
+    width: 120px;
+  }
+  /** les differentes pages du menu **/
+  .nav-items {
+      flex-grow: 1; /* Permet à la barre de navigation de prendre tout l'espace disponible */
+      list-style: none;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+      margin-left: -60%;
+  }
+
+  .nav-item {
+      text-decoration: none;
+      padding: 2%;
+      background-color:
+  }
+
+  .nav-item a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      margin-right: 20px;
+  }
+
+  .nav-item a:hover {
+      color: #787609;
+  }
+
+
+
+  .nav-items {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 25px;
+      right: 0;
+      background-color: #05063e;
+      text-align: center;
+  }
+
+  .nav-items.show {
+      display: flex;
+  }
+
+  .burger-menu {
+      display: auto;
+      font-size: 1.5em;
+      cursor: pointer;
+      color: #05063e; /* Ajout de la couleur de texte */
+      margin-right: 20px; /* Ajout d'un espacement à droite */
+  }
+
+  .burger-menu.active {
+      color: #05063e; /* Couleur du texte au survol */
+  }
+
+  .nav-item a:hover {
+      color: #787609;
+  }
+
+  #home .left {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  #home .left h1 {
+      margin-top: 100px;
+      font-size: 20px;
+  }
+
+  #home .right {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  #home .right img{
+    width: 200px;
+  }
+
+  #navbar .nav-search .nav-search__el{
+    display: flex;
+    width: auto;
+
+  }
+
+  main {
+    display: flex;
+    width: 100%;
+    height: 250vh;
+    align-items: center;
+    justify-content: center;
+    background: #e6e6e6;
+}
+
+  .container::before {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 12px;
+    justify-content: space-between;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+  .container .box.two .image {
+      position: relative;
+      right: 0 top: 0;
+      height: 340px;
+      width: 173px;
+      left: 0;
+      top: 54px;
+  }
+
+
+  #cars ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .car {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #cars .section_title{
+    display: flex;
+    justify-content: center;
+  }
+
+  li .car img{
+    display: flex;
+    justify-content: flex-start;
+
+  }
+
+  .cars{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #contact {
+    padding: 2px;
+    width: 100%
+  }
+
+  /* social */
+
+  .service{
+    max-width: fit-content;
+    padding: 0;
+  }
+
+  .sidebar-social-media__content {
+    padding: 0.5rem 1rem;
+    box-shadow: 0;
+  }
+
+  .sidebar-social-media__content h3 {
+    font-size: 1rem;
+    border-bottom: #fff solid 1px;
+
+  }
+
+
+  .sidebar-social-media__content_icon i {
+    font-size: 1.2rem;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #05063e;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+  }
+
+  #services {
     padding: 0px;
-}
-}
+    margin: 0px;
+    flex-direction: column;
+  }
+
+
+  .service {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  box-shadow: none;
+  }
+
+  .list_services {
+    max-width: fit-content;
+    width: 100%;
+    height: auto;
+    margin: 2px ;
+    /* border: 1px solid #333; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    justify-content: center;
+    grid-gap: 10px;
+  }
+
+
+  footer {
+    padding: 0;
+    width: 110%;
+    font-size: 0.72rem;
+  }

@@ -102,68 +102,38 @@ const baseLayers = {
 
 L.control.layers(baseLayers).addTo(map);
 
-
+// Fonction pour convertir une variable en minuscules
+function convertToLowerCase(input) {
+  return input.toLowerCase();
+}
 
 function ouvrirPage() {
     var a = document.getElementById("search").value;
+    a= convertToLowerCase(a);
 
-    if (a === "pain") {
-        window.location.href="../search/painalepin.html";
+    if (a === "pain" || a === "alepin") {
+        window.location.href = "../search/painalepin.html";
+    } else if (a === "viennoiserie") {
+        window.location.href = "../search/croissant.html";
+    } else if (a === "mamoul") {
+        window.location.href = "../search/mamoul.html";
+    } else if (a === "hamburger" || a === "burger") {
+        window.location.href = "../search/burger.html";
+    } else if (a === "youtube") {
+        window.location.href = "https://www.youtube.com/";
+    } else if (a === "brun" || a === "asmar") {
+        window.location.href = "../search/paindorge.html";
+    } else if (a === "shop") {
+        window.location.href = "../search/product.html";
+    } else if (a === "kaak") {
+        window.location.href = "../search/kaak.html";
+    } else if (a === "croissant") {
+        window.location.href = "../search/croissant.html";
+    } else {
+        window.location.href = "../product/product.html";
     }
-
-    if (a === "alepin") {
-        window.location.href="../search/painalepin.html";
-    }
-
-
-    if (a === "viennoiserie") {
-        window.location.href="../search/croissant.html";
-    }
-
-    if (a === "mamoul") {
-        window.location.href="../search/mamoul.html";
-    }
-
-    if (a === "hamburger") {
-        window.location.href="../search/burger.html";
-    }
-
-    if (a === "burger") {
-        window.location.href="../search/burger.html";
-    }
-
-
-
-    if (a === "youtube") {
-        window.location.href="https://www.youtube.com/";
-    }
-
-    if (a === "brun") {
-        window.location.href="../search/paindorge.html";
-    }
-
-    if (a === "asmar") {
-        window.location.href="../search/paindorge.html";
-    }
-
-    if (a === "shop") {
-        window.location.href="../search/product.html";
-    }
-
-    if (a === "mamoul") {
-        window.location.href="../search/mamoul.html";
-    }
-
-    if (a === "kaak") {
-        window.location.href="../search/kaak.html";
-    }
-
-    if (a === "croissant") {
-      window.location.href="../search/croissant.html";
-    }
-
-
 }
+
 
 var menu_toggle = document.querySelector('.menu_toggle');
 var menu = document.querySelector('.menu');
