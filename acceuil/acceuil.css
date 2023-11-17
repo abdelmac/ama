@@ -1579,9 +1579,9 @@ footer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px), 1fr);
     grid-gap: 2em;
-    width: 98%;
+    width: fit-content;
     margin: auto;
-    padding: 3em;
+    padding: 0;
   }
 
   ul .glide__slide{
@@ -1696,6 +1696,10 @@ footer{
 
     /* social */
 
+    .service{
+      max-width: fit-content;
+      padding: 0;
+    }
 
     .sidebar-social-media__content {
       padding: 0.5rem 1rem;
@@ -1715,10 +1719,12 @@ footer{
       background-color: #fff;
       padding: 20px;
       border-radius: 100%;
+      width: 10px;
+      height: 10px;
     }
 
     .list_services {
-      max-width: 1300px;
+      max-width: fit-content;
       width: 80%;
       height: auto;
       margin: 30px auto;
