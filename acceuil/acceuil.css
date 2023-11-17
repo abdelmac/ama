@@ -1453,6 +1453,7 @@ footer{
       position: top;
       transition: top 10s;
       height: 50px;
+      left:0;
       max-width: 100%;
       z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
   }
@@ -1461,6 +1462,8 @@ footer{
   #navbar.fixed {
       position: fixed;
       top: 0;
+      padding: 0;
+      left: 0;
       max-width: 100%;
       z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
   }
@@ -1591,6 +1594,10 @@ footer{
 
   }
 
+
+  .main {
+    max-width: fit-content;
+  }
 
 
   .article-text h2 , .article-text__footer-1 h2 , .article-text__footer-2 h2 {
@@ -1742,6 +1749,11 @@ footer{
 
     #services {
       max-width: 100%;
+    }
+
+    #map {
+      padding: 0;
+      margin: 0;
     }
 
     /* social */
