@@ -876,15 +876,16 @@ body {
 
 
 .service {
-    width: 25%;
+
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    padding: -9px;
-    margin: 20px;
+    padding: 5px;
+    margin: 10px;
+    margin-bottom: 70px;
 }
 .service i {
     font-size: 25px;
@@ -1476,8 +1477,8 @@ footer{
   .SideBar{
       grid-column-start: 1;
       grid-column-end: 4;
-      grid-row-start: 5;
-      grid-row-end: 9;
+      grid-row-start: 8;
+      grid-row-end: 12;
       background-color: #dfcece;
       display: grid;
       grid-template-columns: auto;
@@ -1489,7 +1490,7 @@ footer{
       justify-content: center;
       left: auto;
       flex-direction: row;
-      margin-left: 10px;
+      margin-left: 0px;
   }
   i.las la-search{
     display: none;
@@ -1508,6 +1509,11 @@ footer{
       align-items: center;
       margin-top: 20px;
       margin-left: -60%;
+  }
+
+  .nav ul {
+    margin-left: 0px;
+    padding-left: 0px;
   }
 
   .nav-item {
@@ -1595,11 +1601,34 @@ footer{
 
   .main-section {
     display: grid;
+    font-size: 12px;
     grid-template-columns: repeat(auto-fit, minmax(250px), 1fr);
     grid-gap: 2em;
     width: 98%;
     margin: auto;
   }
+
+  .article{
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .article-footer-1{
+    grid-column-start:  1 ;
+    grid-column-end:    3 ;
+  }
+
+
+
+  .article-footer-2{
+    grid-column-start: 3 ;
+    grid-column-end:  4 ;
+  }
+
+
+
+
+
 
   ul .glide__slide{
     margin-left: 50px;
@@ -1711,6 +1740,10 @@ footer{
       justify-content: flex-start;
     }
 
+    #services {
+      max-width: 100%;
+    }
+
     /* social */
 
 
@@ -1734,9 +1767,13 @@ footer{
       border-radius: 100%;
     }
 
+    .services {
+      padding: 0px;
+    }
+
     .list_services {
       max-width: 1300px;
-      width: 80%;
+      width: 100%;
       height: auto;
       margin: 30px auto;
       /* border: 1px solid #333; */
@@ -1746,16 +1783,23 @@ footer{
       grid-gap: 10px;
     }
 
+     .service {
+      margin: 1px;
+      padding: 0px;
+    }
 
+    #contact {
+      width: 100%;
+      margin-left: 0%;
+      padding:2%;
+    }
 
 
 
     footer{
         margin-top: 5px;
-        border-top: 5px solid #6f6f6f;
-        background-color: #05063e ;
-        color: #fff;
         padding: 30px 10px;
+        width: 100%;
     }
     footer h1{
         font-family: 'Playfair Display', serif;
