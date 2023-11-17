@@ -795,6 +795,15 @@ body {
   animation: 3s;
 }
 
+.net-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  font-size: 1.5em;
+  color: #05063e;
+}
+
 
 #map {
   height: 600px;
