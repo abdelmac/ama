@@ -140,7 +140,7 @@ body {
 
 /** WETZEL  Marie-therese **/
 .pp1{
-  border-radius: 100%;
+  border-radius: 50%;
   width: 90px;
   height: 90px;
   background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
@@ -152,7 +152,7 @@ body {
 .pp2{
   border-radius: 100%;
   width: 80px;
-  height: 90px;
+  height: 80px;
   background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
   background-size: 70px;
   background-repeat: no-repeat;
@@ -170,7 +170,7 @@ body {
 
 /** CHAABAN Adnan **/
 .pp4{
-  border-radius: 100%;
+  border-radius: 50%;
   width: 90px;
   height: 90px;
   background-image: url("https://media.istockphoto.com/id/1300845620/fr/vectoriel/appartement-dicône-dutilisateur-isolé-sur-le-fond-blanc-symbole-utilisateur.jpg?s=612x612&w=0&k=20&c=BVOfS7mmvy2lnfBPghkN__k8OMsg7Nlykpgjn0YOHj0=");
@@ -1474,8 +1474,8 @@ footer{
     }
 
     .logo {
-      margin-top: -10px;
-      width: 25px;
+      margin-left: 0px;
+      width: 35px;
     }
 
   .SideBar{
