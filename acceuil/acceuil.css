@@ -830,6 +830,11 @@ body {
 #cars h1{
   color: #05063e;
 }
+
+#cars .section_title{
+  display: flex;
+  justify-content: center;
+}
 .car {
   list-style: none;
   display: flex;
@@ -1377,6 +1382,19 @@ footer{
       width: auto;
       margin: 0;
     }
+
+    .list_services {
+      max-width: 1300px;
+      width: 80%;
+      height: auto;
+      margin: 30px auto;
+      /* border: 1px solid #333; */
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 300px);
+      justify-content: center;
+      grid-gap: 50px;
+    }
+
 
 
 
