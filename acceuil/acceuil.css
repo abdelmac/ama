@@ -353,7 +353,6 @@ body {
 
 
 *, ::before, ::after {
-
 }
 .meilleur h1 {
     text-align: center;
@@ -1132,7 +1131,7 @@ footer .servicesi .service p{
     max-width: 300px;
 }
 footer #contact{
-    color: rgb(181, 181, 181);
+    color: ;
 }
 
 footer .sidebar-social-media__content_icon{

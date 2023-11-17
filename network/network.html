@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
     <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/pw/ADCreHfJisKPzUgT_u2WIvAJKue_LhhLQc8t9PvuXNPxA-fkEMqthi_U7s4L-CNpoTAZLdsYdlvtcQjnDJji8iGIlwYRu9nPte9rUrTE2K0HYOqrJQZWo5MqqCNUZJB9eyN15YxbDKneEc7xvBv0Sbo4IMM=w873-h879-s-no?authuser=0">
     <link rel="stylesheet" href="../acceuil/acceuil.css" />
-
+    <link rel="stylesheet" href=".acceuil.style.css" />
     <title>AMAREINE</title>
   </head>
   <body>
@@ -19,240 +19,58 @@
 
         <header>
           <nav id="navbar">
-            <div class="logotitre">
-              <img class="logo" src="https://lh3.googleusercontent.com/pw/ADCreHfJisKPzUgT_u2WIvAJKue_LhhLQc8t9PvuXNPxA-fkEMqthi_U7s4L-CNpoTAZLdsYdlvtcQjnDJji8iGIlwYRu9nPte9rUrTE2K0HYOqrJQZWo5MqqCNUZJB9eyN15YxbDKneEc7xvBv0Sbo4IMM=w873-h879-s-no?authuser=0" alt="slide1"  />
-              <a href="../index.html">AMA<span>REINE</span></a>
-              <div class="nav-search">
-                <div class="nav-search__el">
-                  <i class="las la-search"> </i>
-                  <input type="text" placeholder="Recheche" class="searchIput"  id="search" value="" onchange="ouvrirPage()" />
+              <div class="logotitre">
+                <img class="logo" src="https://lh3.googleusercontent.com/pw/ADCreHfJisKPzUgT_u2WIvAJKue_LhhLQc8t9PvuXNPxA-fkEMqthi_U7s4L-CNpoTAZLdsYdlvtcQjnDJji8iGIlwYRu9nPte9rUrTE2K0HYOqrJQZWo5MqqCNUZJB9eyN15YxbDKneEc7xvBv0Sbo4IMM=w873-h879-s-no?authuser=0" alt="slide1"  />
+                <a href="index.html">AMA<span>REINE</span></a>
+                <div class="nav-search">
+                  <div class="nav-search__el">
+                    <i class="las la-search"></i>
+                    <input type="text" placeholder="Recheche" class="searchIput"  id="search" value="" onchange="ouvrirPage()" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <nav class="nav">
-              <ul class="nav-items">
-                <li class="nav-item"><a href="../index.html">Accueil</a></li>
-                <li class="nav-item"><a href="../product/product.html">Produits </a></li>
-                <li class="nav-item"><a href="../network/network.html">Résaux </a></li>
-                <li class="nav-item"><a href="../team/team.html">Notre Equipe</a></li>
-                <li class="nav-item"><a href="../contact/contact.html">Contact</a></li>
+              <nav class="nav">
+                <ul class="nav-items">
+                  <li class="nav-item"><a href="../index.html">Accueil</a></li>
+                  <li class="nav-item"><a href="../product/product.html">Produits </a></li>
+                  <li class="nav-item"><a href="../network/network.html">Resaux </a></li>
+                  <li class="nav-item"><a href="../team/team.html">Notre Equipe</a></li>
+                  <li class="nav-item"><a href="../contact/contact.html">Contact</a></li>
 
-              </ul>
-              <div class="burger-menu">&#9776;</div>
+                </ul>
+                <div class="burger-menu">&#9776;</div>
             </nav>
           </nav>
-
-          <div id="map" ></div>
-          <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-          <script src="../acceuil/acceuil.js"></script>
-
-
           <div>
-          </div>
-        </header>
-<!--
-        <main class="main">
-          <h1 class="main-title"> En vente</h1>
-          <section class="main-section">
-            <div class="article">
-              <div class="article-image">
-                <img
-                  src="../img/img13.jpeg"
-                  alt=""
-                />
-              </div>
-              <div class="article-text">
-                <h2> pain artisanal </h2>
-                <p>
-                  Dans ce cas, l'espace entre l'unité de mesure et l'opérateur "-"
-                  est important pour que la fonction "calc" soit correctement
-                  interprétée par le navigateur web.Dans ce cas, l'espace entre
-                  l'unité de mesure et l'opérateur "-" est important pour que la
-                  fonction "calc" soit correctement interprétée par le navigateur
-                  web.
-                </p>
-                <button class="article-seeMore">voir details</button>
-                <div class="comments">
-                  <div><i class="las la-comments"></i> <span>1</span></div>
-                  <div class="share">
-                    <p>partager</p>
-                    <span> <i class="lab la-facebook-f"></i></span>
-                    <span> <i class="lab la-twitter"></i></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="article">
-              <div class="article-text">
-                <h2> pain qualité superieur</h2>
-                <p>
-                  Dans ce cas, l'espace entre l'unité de mesure et l'opérateur "-"
-                  est important pour que la fonction "calc" soit correctement
-                  interprétée par le navigateur web.Dans ce cas, l'espace entre
-                  l'unité de mesure et l'opérateur "-" est important pour que la
-                  fonction "calc" soit correctement interprétée par le navigateur
-                  web.
-                </p>
-                <button class="article-seeMore">voir details</button>
-                <div class="comments">
-                  <div><i class="las la-comments"></i> <span>1</span></div>
-                  <div class="share">
-                    <p>partager</p>
-                    <span> <i class="lab la-facebook-f"></i></span>
-                    <span> <i class="lab la-twitter"></i></span>
-                  </div>
-                </div>
-              </div>
-              <div class="article-image">
-                <img
-                  src="../img/img14.jpeg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="article-footer-1">
-              <div class="article-image__footer-1">
-                <img
-                  src="../img/img40.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="article-text__footer-1">
-                <h2>plat </h2>
-                <p>
-                  Dans ce cas, l'espace entre l'unité de mesure et l'opérateur "-"
-                  est important pour que la fonction "calc" soit correctement
-                  interprétée par le navigateur web.Dans ce cas, l'espace entre
-                  l'unité de mesure et l'opérateur "-" est important pour que la
-                  fonction "calc" soit correctement interprétée par le navigateur
-                  web.
-                </p>
-                <button class="article-seeMore">voir details</button>
-                <div class="comments">
-                  <div><i class="las la-comments"></i> <span>1</span></div>
-                  <div class="share">
-                    <p>partager</p>
-                    <span> <i class="lab la-facebook-f"></i></span>
-                    <span> <i class="lab la-twitter"></i></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="article-footer-2">
-              <div class="article-image__footer-2">
-                <img
-                  src="../img/img44.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="article-text__footer-2">
-                <h2> recette</h2>
-                <p>
-                  Dans ce cas, l'espace entre l'unité de mesure et l'opérateur "-"
-                  est important pour que la fonction "calc" soit correctement
-                  interprétée par le navigateur web.Dans ce cas, l'espace entre
-                  l'unité de mesure et l'opérateur "-" est important pour que la
-                  fonction "calc" soit correctement interprétée par le navigateur
-                  web.
-                </p>
-                <button class="article-seeMore">voir details</button>
-                <div class="comments">
-                  <div><i class="las la-comments"></i> <span>1</span></div>
-                  <div class="share">
-                    <p>partager</p>
-                    <span> <i class="lab la-facebook-f"></i></span>
-                    <span> <i class="lab la-twitter"></i></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="SideBar">
-              <div class="SideBar-newletter">
-                <h1>New letter</h1>
-                <div class="newletter-action">
-                  <input
-                    type="text"
-                    placeholder="Entrer votre email"
-                    class="newletter-Input"
-                  />
-                  <button class="new-Btn">S'abonner</button>
-                </div>
-              </div>
-              <div class="recent">
-                <h1>Article récents</h1>
-                <div>
-                  <ul class="recent__items">
-                    <li class="recent__item">
-                      <img
-                        src="../image/painpita1.jpg"
-                        alt="slide1"
-                      />
-                      <h4> pain brun </h4>
+
+              <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
+
+
                     </li>
-                    <li class="recent__item">
-                      <img
-                        src="../image/painpita2.jpg"
-                        alt="slide1"
-                      />
-                      <h4> pain blanc</h4>
-                    </li>
-                    <li class="recent__item">
-                      <img
-                        src="../image/painpita3.jpg"
-                        alt="slide1"
-                      />
-                      <h4>patisserie </h4>
-                    </li>
-                    <li class="recent__item">
-                      <img
-                        src="../image/painsachet1200.jpg"
-                        alt="slide1"
-                      />
-                      <h4> alimentaire </h4>
-                    </li>
-                    <li class="recent__item">
-                      <img
-                        src="../image/painlibanais8.jpg"
-                        alt="slide1"
-                      />
-                      <h4> restaurant </h4>
-                    </li>
+
+
+
+
+
+
                   </ul>
                 </div>
-              </div>
-              <div class="sidebar-social-media">
-                <div class="sidebar-social-media__content">
-                  <h3>Suivez nous</h3>
-                  <div class="sidebar-social-media__content_icon">
-                    <span><a href="https://twitter.com/Amareine_europe"> <i class="lab la-twitter"></i> </a> </span>
-                    <span><a href="https://www.instagram.com/amarein.europe/"> <i class="lab la-instagram"></i> </a> </span>
-                    <span><a href="https://www.facebook.com/profile.php?id=61553700205864"> <i class="lab la-facebook-f"></i> </a> </span>
-                    <span><a href="https://www.linkedin.com/in/samer-machta-2644b8224/?originalSubdomain=fr"> <i class="lab la-linkedin-in"></i> </a> </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </main>
--->
 
-<!--
-        <script>
-          new Glide('.glide', {
-            type: 'carousel',
-            perView: 5,
-            focusAt: 'center',
-            autoplay: 3000,
-            arrows: {
-              prev: '.glide__arrow-left',
-              next: '.glide__arrow-right',
-            },
-          }).mount();
-        </script>
+
+
+
+
+          </div>
+        </header>
+
+
+
         <div id="map" ></div>
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
--->
-        <!-- section choix produit alimentaire -->
+        <script src="../acceuil/acceuil.js"></script>  <!-- section choix produit alimentaire -->
 
         <section id="cars">
           <h1 class="section_title">Villes</h1>
