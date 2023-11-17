@@ -1553,6 +1553,20 @@ footer{
     color: #05063e;
   }
 
+  .article {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    border-bottom: solid 2px #7d57579b;
+    padding-bottom: 30px;
+  }
+
+  .article-footer-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+
   ul .glide__slide{
     margin-left: 50px;
   }
