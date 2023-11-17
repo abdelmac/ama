@@ -770,6 +770,7 @@ body {
   padding: 1rem 3rem;
 }
 
+
 .sidebar-social-media__content h3 {
   color: #fff;
   font-size: 1.5rem;
@@ -906,8 +907,8 @@ body {
 }
 .service i {
     font-size: 25px;
-    height: 50px;
-    width: 50px;
+    height: 25px;
+    width: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1545,6 +1546,8 @@ footer{
       top: 0;
       padding: 0;
       width: 100%;
+      right: 0;
+      justify-content: space-between;
       z-index: 2000; /* Assurez-vous que z-index est suffisamment élevé */
   }
 
@@ -1571,10 +1574,12 @@ footer{
   .nav {
       display: flex;
       justify-content: center;
-      left: auto;
       flex-direction: row;
       margin-left: 10px;
+      right: 0;
   }
+
+
   i.las la-search{
     display: none;
   }
