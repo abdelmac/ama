@@ -1270,7 +1270,8 @@ footer{
         font-size: 1.5em;
         cursor: pointer;
         color: #05063e; /* Ajout de la couleur de texte */
-        margin-right: 15px; /* Ajout d'un espacement à droite */
+        margin-right: 5px; /* Ajout d'un espacement à droite */
+        margin-top: 7px;
     }
 
     .burger-menu.active {
