@@ -33,7 +33,7 @@
                 <ul class="nav-items">
                   <li class="nav-item"><a href="index.html">Accueil</a></li>
                   <li class="nav-item"><a href="product/product.html">Produits </a></li>
-                  <li class="nav-item"><a href="network/network.html">Resaux </a></li>
+                  <li class="nav-item"><a href="network/network.html">Réseaux </a></li>
                   <li class="nav-item"><a href="team/team.html">Notre Equipe</a></li>
                   <li class="nav-item"><a href="contact/contact.html">Contact</a></li>
 
@@ -441,14 +441,31 @@
 
               <div class="form_contact">
                   <h3>Envoyer un message</h3>
-                  <form action="#">
-                      <input type="text"placeholder="Nom">
-                      <input type="email"placeholder="Adresse Mail">
-                      <input type="text"placeholder="Objet">
-                      <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                      <input type="submit" value="Envoyer">
+                  <form onsubmit="sendEmail(); reset(); return false; ">
+                      <input type="text" id="name "placeholder="Your Name" required>
+                      <input type="email" id="email" placeholder="Email id" required>
+                      <input type="text" id="phone" placeholder="phone no." >
+                      <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                      <button type="submit"> Envoyer </button>
                   </form>
               </div>
+              <script src="https://smtpjs.com/v3/smtp.js" >  </script>
+              <script>
+
+              function senEmail() {
+                    Email.send({
+                      Host : "smtp.gmail.com",
+                      Username : "europe.amareine@gmail.com",
+                      Password : "amaPAIN@2001",
+                      To : 'abdel595et@gmail.com',
+                      From : document.getElementById("email").value ,
+                      Subject : "from amareine website",
+                      Body : "And this is the body"
+                  }).then(
+                    message => alert(message)
+                  );
+              }
+              </script>
           </div>
         </section>
 
@@ -458,7 +475,7 @@
             <div class="servicesi">
 
                 <div class="service">
-                    <h3> Nous joindre</h3>
+                    <h3>réseaux sociaux</h3>
                     <div class="sidebar-social-media">
                       <div class="sidebar-social-media__content">
                         <div class="sidebar-social-media__content_icon">
@@ -484,7 +501,7 @@
               </div>
 
               <div class="service">
-                  <h3>Societe</h3>
+                  <h3>Société</h3>
                   <div class="sidebar-social-media">
                     <div class="sidebar-social-media__content">
                       <div class="sidebar-social-media__content_icon">

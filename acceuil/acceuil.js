@@ -144,3 +144,23 @@ menu_toggle.onclick = function(){
     menu_toggle_span.classList.toggle('active');
     menu.classList.toggle('responsive') ;
 }
+
+
+
+
+
+//contact Mail
+
+function senEmail() {
+      Email.send({
+        Host : "smtp.gmail.com",
+        Username : "europe.amareine@gmail.com",
+        Password : "amaPAIN@2001",
+        To : 'abdel595et@gmail.com',
+        From : document.getElementById("email").value ,
+        Subject : "from amareine website",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}

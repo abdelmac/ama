@@ -946,6 +946,17 @@ body {
     text-align: center;
 
 }
+
+form button:hover {
+  background-color: #afa3ff;
+  color: #f1f1f1;
+
+
+}
+
+
+
+
 .localisation_contact_div {
     display: flex;
     align-items: center;
@@ -983,7 +994,7 @@ body {
     flex-direction: column;
     width: 100%;
 }
-.form_contact form input , textarea {
+.form_contact form input , textarea , button {
     border: 1px solid #ccc;
     width: 100%;
     margin-bottom: 15px;
@@ -993,7 +1004,7 @@ body {
     font-size: 15px;
     resize: none;
 }
-.form_contact form input[type="submit"]{
+form button{
     margin-bottom: 0;
     background-color: #05063e ;
     color: #fff;
@@ -2003,7 +2014,7 @@ nav .onglets {
         background-color: #05063e;
         margin: 0 2%;
         color: #f1f1f1;
-        
+
     }
 
     /** MACHTA Samer **/
