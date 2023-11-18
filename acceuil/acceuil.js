@@ -165,13 +165,15 @@ var Email = {
       },
       ajax: function (e, n) {
           var t = Email.createCORSRequest("GET", e); t.onload = function () {
-         var e = t.responseText; null != n && n(e) }, t.send()
+         var e = t.responseText; null != n && n(e)
+       },
+       t.send()
        },
        createCORSRequest: function (e, n) {
           var t = new XMLHttpRequest;
           return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t
         }
-      };
+      }
 
 
 //contact Mail
@@ -188,4 +190,4 @@ function senEmail() {
     }).then(
       message => alert(message)
     );
-};
+}
