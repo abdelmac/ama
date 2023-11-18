@@ -124,8 +124,9 @@ body {
     align-items: center;
     width: 230px;
     height: 150px;
-    background-color: #3498db;
+    background-color: #05063e;
     margin: 0 2%;
+    color: #f1f1f1;
 }
 
 /** MACHTA Samer **/
@@ -1500,10 +1501,11 @@ nav .onglets {
 
     .levelp .blockp {
         text-decoration: none;
+        color: #f1f1f1;
 
         width: 120px;
         height: 170px;
-        background-color: #3498db;
+        background-color: #05063e;
         margin: 0 2%;
     }
 
@@ -1998,8 +2000,10 @@ nav .onglets {
         align-items: center;
         width: 230px;
         height: 150px;
-        background-color: #3498db;
+        background-color: #05063e;
         margin: 0 2%;
+        color: #f1f1f1;
+        
     }
 
     /** MACHTA Samer **/
