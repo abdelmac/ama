@@ -350,12 +350,6 @@ body {
     width: 60%;
 }
 
-
-
-
-*, ::before, ::after {
-
-}
 .meilleur h1 {
     text-align: center;
     font-size: 40px;
@@ -863,7 +857,6 @@ body {
 
 .car img{
   width: 90px;
-  height: ;
 }
 
 .car a{
@@ -1019,7 +1012,7 @@ form button{
     font-size: 15px;
     resize: none;
 }
-}
+
 footer {
     background-color: #05063e ;
     text-align: center;
@@ -1653,7 +1646,7 @@ nav .onglets {
   #map{
     visibility:hidden;
   }
-  
+
   body {
     margin: 0;
     padding: 0;
