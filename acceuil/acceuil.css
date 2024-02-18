@@ -1496,6 +1496,9 @@ nav .onglets {
       margin-left: 15% ;
     }
 
+    .net-title {
+      visibility: hidden;
+    }
 
 
 
