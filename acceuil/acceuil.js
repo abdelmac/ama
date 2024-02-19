@@ -144,3 +144,26 @@ menu_toggle.onclick = function(){
     menu_toggle_span.classList.toggle('active');
     menu.classList.toggle('responsive') ;
 }
+
+// envoie de mail
+
+
+const form = document.querySelector("form"),
+statusTxt = form.querySelector(".button-area span");
+
+form.onsubmit = (e) => {
+    e.preventDefault(); //preventing form from submitting 
+    statusTxt.style.display = "block";
+
+    let khr = new XMLHttpRequest(); //creating new xml object
+    xhr.open("POST" , "message.php" , true); //sending post request to message.php file
+    xhr.onload = ()=>{
+        if(readyState == 4 && xhr.status == 200){ //if ajax response status is 200 & ready status is 4 means there is no any error
+            let response = xhr.response; //
+            console.log(response);
+            statusTxt.innerText = response;
+        }
+    }
+    let formData = new FormData(form); //creating new formData obj. This obj is used to send from data
+    xhr.send(formData); // send form data
+}
