@@ -169,7 +169,7 @@ form.onsubmit = (e) => {
                 form.reset();
                 setTimeout(()=>{
                     statusTxt.style.display = "none";
-                }, 3000); // hide the statusTxt after 3 seconds if 
+                }, 3000); // hide the statusTxt after 3 seconds if sent
             } 
             statusTxt.innerText = response;
         }
