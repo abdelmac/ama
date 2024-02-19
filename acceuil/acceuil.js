@@ -153,14 +153,24 @@ statusTxt = form.querySelector(".button-area span");
 
 form.onsubmit = (e) => {
     e.preventDefault(); //preventing form from submitting 
+    statusTxt.style.color = "#0D6EFD";
     statusTxt.style.display = "block";
 
     let khr = new XMLHttpRequest(); //creating new xml object
     xhr.open("POST" , "message.php" , true); //sending post request to message.php file
     xhr.onload = ()=>{
-        if(readyState == 4 && xhr.status == 200){ //if ajax response status is 200 & ready status is 4 means there is no any error
-            let response = xhr.response; //
-            console.log(response);
+        if(xhr.readyState == 4 && xhr.status == 200){ //if ajax response status is 200 & ready status is 4 means there is no any error
+            
+            let response = xhr.response; //storing ajax response in a response variable
+            //if response is an error like enter valid email addresse then we'll change staus colors
+            if(response.indexOf("Email and password field is required!") != -1 || response.indexOf("Enter a valid email address") || response.indexOf("Sorry, failed to send your message!")){
+                statusTxt.style.color = "red";
+            }else{
+                form.reset();
+                setTimeout(()=>{
+                    statusTxt.style.display = "none";
+                }, 3000); // hide the statusTxt after 3 seconds if 
+            } 
             statusTxt.innerText = response;
         }
     }
