@@ -96,7 +96,7 @@ for (let i = 1; i < cities.length; i++) {
 
 // Créez une couche de contrôle pour activer/désactiver les noms des villes
 const baseLayers = {
-    'ArcGIS': arcGISLayer, // Utilisez la couche ArcGIS comme fond de carte
+    //'ArcGIS': arcGISLayer, // Utilisez la couche ArcGIS comme fond de carte
     'Villes': cityMarkers
 };
 
