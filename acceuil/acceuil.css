@@ -988,7 +988,7 @@ form button:hover {
     flex-direction: column;
     width: 100%;
 }
-.form_contact form input , textarea  {
+.form_contact form input , textarea, select {
     border: 1px solid #ccc;
     width: 100%;
     margin-bottom: 15px;
