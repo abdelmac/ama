@@ -148,32 +148,38 @@ menu_toggle.onclick = function(){
 // envoie de mail
 
 
-const form = document.querySelector("form"),
-statusTxt = form.querySelector(".button-area span");
+const form = document.querySelector("form");
+const statusTxt = form.querySelector(".button-area span");
 
 form.onsubmit = (e) => {
-    e.preventDefault(); //preventing form from submitting 
+    e.preventDefault(); // preventing form from submitting
     statusTxt.style.color = "#0D6EFD";
     statusTxt.style.display = "block";
 
-    let khr = new XMLHttpRequest(); //creating new xml object
-    xhr.open("POST" , "message.php" , true); //sending post request to message.php file
-    xhr.onload = ()=>{
-        if(xhr.readyState == 4 && xhr.status == 200){ //if ajax response status is 200 & ready status is 4 means there is no any error
-            
-            let response = xhr.response; //storing ajax response in a response variable
-            //if response is an error like enter valid email addresse then we'll change staus colors
-            if(response.indexOf("Email and password field is required!") != -1 || response.indexOf("Enter a valid email address") || response.indexOf("Sorry, failed to send your message!")){
+    let xhr = new XMLHttpRequest(); // creating new XMLHttpRequest object
+    xhr.open("POST", "message.php", true); // sending post request to message.php file
+    xhr.onload = () => {
+        if (xhr.status == 200) { // if ajax response status is 200 means there is no any error
+            let response = xhr.responseText; // storing ajax response in a response variable
+            // if response is an error like "Email and password field is required!" or "Enter a valid email address!" or "Sorry, failed to send your message!"
+            if (response.indexOf("Email and password field is required!") !== -1 || 
+                response.indexOf("Enter a valid email address") !== -1 || 
+                response.indexOf("Sorry, failed to send your message!") !== -1) {
                 statusTxt.style.color = "red";
-            }else{
+            } else {
                 form.reset();
-                setTimeout(()=>{
+                setTimeout(() => {
                     statusTxt.style.display = "none";
                 }, 3000); // hide the statusTxt after 3 seconds if sent
-            } 
+            }
             statusTxt.innerText = response;
         }
     }
-    let formData = new FormData(form); //creating new formData obj. This obj is used to send from data
+    xhr.onerror = () => {
+        // Handle network errors
+        statusTxt.innerText = "Sorry, there was a network error.";
+        statusTxt.style.color = "red";
+    }
+    let formData = new FormData(form); // creating new FormData object. This object is used to send form data
     xhr.send(formData); // send form data
 }

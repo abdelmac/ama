@@ -458,11 +458,11 @@
             Email.send({
                 Host : "smtp.gmail.com",
                 Username : "jaxouill@gmail.com",
-                Password : "password",
+                Password : "",
                 To : 'abdel595et@gmail.com',
                 From : document.getElementById("email").value,
                 Subject : "New Contact Form Enquiry",
-                Body : "And this is the body"
+                Body : "Name: " + document.getElementById("name").value,
             }).then(
               message => alert(message)
             );
