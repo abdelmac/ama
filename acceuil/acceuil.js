@@ -157,7 +157,7 @@ form.onsubmit = (e) => {
     statusTxt.style.display = "block";
 
     let xhr = new XMLHttpRequest(); // creating new XMLHttpRequest object
-    xhr.open("POST", "message.php", true); // sending post request to message.php file
+    xhr.open("POST", "send_email.php", true); // sending post request to message.php file
     xhr.onload = () => {
         if (xhr.status == 200) { // if ajax response status is 200 means there is no any error
             let response = xhr.responseText; // storing ajax response in a response variable
