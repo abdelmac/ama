@@ -42,7 +42,6 @@ new Glide('.glide', {
 
 
 
-
 // Initialisez la carte centrée sur l'Europe
 const map = L.map('map').setView([49.07081058368201, 6.689774695035996], 6 );
 
