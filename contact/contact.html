@@ -41,28 +41,76 @@
 
 
           <!-- section contact -->
-
-            <section id="contact">
-              <h1 class="section_title">Nous Contacter</h1>
-              <div class="localisation_contact_div">
-                  <div class="localisation">
-                      <h3>Notre Adresse</h3>
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d653.4558627894828!2d6.690079593812693!3d49.07099049369847!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1699447424146!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
-
-                  <div class="form_contact">
-                      <h3>Envoyer un message</h3>
-                      <form action="#">
-                          <input type="text"placeholder="Nom">
-                          <input type="email"placeholder="Adresse Mail">
-                          <input type="text"placeholder="Objet">
-                          <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                          <input type="submit" value="Envoyer">
-                      </form>
-                  </div>
-              </div>
-            </section>
-
-
+          <section id="contact">
+            <h1 class="section_title"></h1>
+            <div class="localisation_contact_div">
+                <div class="localisation">
+                    <h3>Notre Adresse</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d653.4558627894828!2d6.690079593812693!3d49.07099049369847!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1699447424146!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+  
+                <div class="form_contact">
+                    <h3>Envoyer un message</h3>
+                    
+                    <form action="https://formspree.io/f/xqkrbyba" method="POST">
+                        <input type="text" name="Name" id="name "placeholder="Full Name" required>
+                        <input type="email" name="Email" id="email" placeholder="Email" required>
+                        <input type="text" name="phone" id="phone" placeholder="phone no." >
+                        <select  name="country">
+                          <option value="Albanie">Albanie</option>
+                          <option value="Allemagne">Allemagne</option>
+                          <option value="Andorre">Andorre</option>
+                          <option value="Autriche">Autriche</option>
+                          <option value="Biélorussie">Biélorussie</option>
+                          <option value="Belgique">Belgique</option>
+                          <option value="Bosnie-Herzégovine">Bosnie-Herzégovine</option>
+                          <option value="Bulgarie">Bulgarie</option>
+                          <option value="Croatie">Croatie</option>
+                          <option value="Chypre">Chypre</option>
+                          <option value="Danemark">Danemark</option>
+                          <option value="Espagne">Espagne</option>
+                          <option value="Estonie">Estonie</option>
+                          <option value="Finlande">Finlande</option>
+                          <option value="France">France</option>
+                          <option value="Grèce">Grèce</option>
+                          <option value="Hongrie">Hongrie</option>
+                          <option value="Islande">Islande</option>
+                          <option value="Irlande">Irlande</option>
+                          <option value="Italie">Italie</option>
+                          <option value="Lettonie">Lettonie</option>
+                          <option value="Liechtenstein">Liechtenstein</option>
+                          <option value="Lituanie">Lituanie</option>
+                          <option value="Luxembourg">Luxembourg</option>
+                          <option value="Macédoine du Nord">Macédoine du Nord</option>
+                          <option value="Malte">Malte</option>
+                          <option value="Moldavie">Moldavie</option>
+                          <option value="Monaco">Monaco</option>
+                          <option value="Monténégro">Monténégro</option>
+                          <option value="Norvège">Norvège</option>
+                          <option value="Pays-Bas">Pays-Bas</option>
+                          <option value="Pologne">Pologne</option>
+                          <option value="Portugal">Portugal</option>
+                          <option value="République tchèque">République tchèque</option>
+                          <option value="Roumanie">Roumanie</option>
+                          <option value="Royaume-Uni">Royaume-Uni</option>
+                          <option value="Russie">Russie</option>
+                          <option value="Saint-Marin">Saint-Marin</option>
+                          <option value="Serbie">Serbie</option>
+                          <option value="Slovaquie">Slovaquie</option>
+                          <option value="Slovénie">Slovénie</option>
+                          <option value="Suède">Suède</option>
+                          <option value="Suisse">Suisse</option>
+                          <option value="Ukraine">Ukraine</option>
+                          <option value="Vatican">Vatican</option>
+                        </select>
+                      
+                        <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button class="submit" type="submit"> Envoyer </button>
+                    </form>
+                </div>
+                <script src="https://smtpjs.com/v3/smtp.js" >  </script>
+                <script src="../acceuil/acceuil.js"></script>
+            </div>
+          </section>
 
 
             <footer>
